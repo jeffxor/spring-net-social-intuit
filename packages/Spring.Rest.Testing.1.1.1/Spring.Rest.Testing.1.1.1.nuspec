@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Spring.Rest.Testing</id>
+    <version>1.1.1</version>
+    <title>Spring.Rest Testing</title>
+    <authors>SpringSource</authors>
+    <owners>SpringSource</owners>
+    <licenseUrl>http://www.springframework.net/license.html</licenseUrl>
+    <projectUrl>http://www.springframework.net/rest/</projectUrl>
+    <iconUrl>http://springframework.net/images/SpringSource_Leaves32x32.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Spring.NET REST Client Testing Framework</description>
+    <summary>Testing Framework for RestTemplate based code.</summary>
+    <language>en-US</language>
+    <tags>Spring REST HTTP JSON Unit Test</tags>
+    <dependencies>
+      <dependency id="Spring.Rest" version="[1.1.1]" />
+    </dependencies>
+    <references>
+      <reference file="Spring.Rest.Testing.dll" />
+    </references>
+  </metadata>
+</package>

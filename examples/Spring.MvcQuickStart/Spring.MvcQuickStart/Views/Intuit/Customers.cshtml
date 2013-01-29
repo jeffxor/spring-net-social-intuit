@@ -1,0 +1,22 @@
+﻿@using Intuit.Sb.Cdm.V2;
+@model IList<Intuit.Sb.Cdm.V2.Customer>
+@{
+    ViewBag.Title = "Update Intuit's status";
+}
+
+<h2>Intuit</h2>
+<p>
+    View your Intuit's Customers.
+</p>
+<br />
+<table>
+    @foreach (Customer customer in Model)
+    {
+    <tr>
+        <td>
+            @customer.GivenName @customer.FamilyName
+        </td>
+    </tr>
+    }
+</table>
+

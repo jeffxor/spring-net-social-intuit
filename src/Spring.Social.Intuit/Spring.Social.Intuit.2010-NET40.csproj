@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D087371-91F0-49B1-9011-000925DE5207}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spring.Social.Intuit._2010_NET40</RootNamespace>
+    <AssemblyName>Spring.Social.Intuit.2010-NET40</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\build\VS2010-NET40\Spring.Social.Intuit\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\packages\Common.Logging.2.0.0\lib\2.0\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Rest">
+      <HintPath>..\..\packages\Spring.Rest.1.1.1\lib\net40-client\Spring.Rest.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Social.Core">
+      <HintPath>..\..\packages\Spring.Social.Core.1.0.1\lib\net40-client\Spring.Social.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Social\Intuit\Api\CompanyMetaDataOperations.cs" />
+    <Compile Include="Social\Intuit\Api\ICustomerOperations.cs" />
+    <Compile Include="Social\Intuit\Api\IIntuit.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\CompanyMetaDataTemplate.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\CustomerTemplate.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\IntuitTemplate.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\UserTemplate.cs" />
+    <Compile Include="Social\Intuit\Data\CompanyMetaData.cs" />
+    <Compile Include="Social\Intuit\Data\Qbo.cs" />
+    <Compile Include="Social\Intuit\Api\IntuitProfile.cs" />
+    <Compile Include="Social\Intuit\Api\IUserOperations.cs" />
+    <Compile Include="Social\Intuit\Connect\IntuitServiceProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\xsd\CompanyMetaData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\xsd\CustomerCdmTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\xsd\Finance.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\xsd\Groups.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\xsd\IntuitBaseExceptionTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\xsd\IntuitCdmBaseTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\xsd\IntuitCustomFieldCdmTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\xsd\PartyCdmTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\xsd\Qbo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\xsd\qbopayroll.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\xsd\QboReports.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateSerializationClasses" Outputs="Social\Intuit\Data\Finance.cs" Inputs="Data\xsd\qbo.xsd, Data\xsd\CompanyMetaData.xsd, Data\xsd\CustomerCdmTypes.xsd, Data\xsd\Finance.xsd, Data\xsd\Groups.xsd, Data\xsd\IntuitCdmBaseTypes.xsd, , Data\xsd\IntuitCustomFieldCdmTypes.xsd, , Data\xsd\PartyCdmTypes.xsd">
+    <Exec Command="&quot;C:\Program Files (x86)\Microsoft SDKs\Windows\v6.0A\bin\xsd.exe&quot; Data\xsd\Finance.xsd Data\xsd\Qbo.xsd /classes /namespace:Intuit.Sb.Cdm.V2 /out:Social\Intuit\Data" />
+  </Target>
+  <Target Name="BeforeBuild" DependsOnTargets="GenerateSerializationClasses">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
