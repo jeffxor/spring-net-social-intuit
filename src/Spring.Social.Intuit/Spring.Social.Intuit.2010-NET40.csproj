@@ -44,21 +44,33 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Social\Intuit\Api\CompanyMetaDataOperations.cs" />
+    <Compile Include="Social\Intuit\Api\ICompanyMetaDataOperations.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\PaymentMethodTemplate.cs" />
+    <Compile Include="Social\Intuit\Api\IPaymentMethodOperations.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\PaymentTemplate.cs" />
+    <Compile Include="Social\Intuit\Api\IPaymentOperations.cs" />
+    <Compile Include="Social\Intuit\Api\IItemOperations.cs" />
+    <Compile Include="Social\Intuit\Api\IInvoiceOperations.cs" />
+    <Compile Include="Social\Intuit\Api\IAccountOperations.cs" />
     <Compile Include="Social\Intuit\Api\ICustomerOperations.cs" />
     <Compile Include="Social\Intuit\Api\IIntuit.cs" />
     <Compile Include="Social\Intuit\Api\Impl\CompanyMetaDataTemplate.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\AccountTemplate.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\ItemTemplate.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\InvoiceTemplate.cs" />
     <Compile Include="Social\Intuit\Api\Impl\CustomerTemplate.cs" />
     <Compile Include="Social\Intuit\Api\Impl\IntuitTemplate.cs" />
     <Compile Include="Social\Intuit\Api\Impl\UserTemplate.cs" />
-    <Compile Include="Social\Intuit\Data\CompanyMetaData.cs" />
-    <Compile Include="Social\Intuit\Data\Qbo.cs" />
     <Compile Include="Social\Intuit\Api\IntuitProfile.cs" />
     <Compile Include="Social\Intuit\Api\IUserOperations.cs" />
     <Compile Include="Social\Intuit\Connect\IntuitServiceProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Social\Intuit\Data\Finance.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\xsd\CompaniesMetaDataResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Data\xsd\CompanyMetaData.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -92,12 +104,15 @@
     <None Include="Data\xsd\QboReports.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Data\xsd\UserResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateSerializationClasses" Outputs="Social\Intuit\Data\Finance.cs" Inputs="Data\xsd\qbo.xsd, Data\xsd\CompanyMetaData.xsd, Data\xsd\CustomerCdmTypes.xsd, Data\xsd\Finance.xsd, Data\xsd\Groups.xsd, Data\xsd\IntuitCdmBaseTypes.xsd, , Data\xsd\IntuitCustomFieldCdmTypes.xsd, , Data\xsd\PartyCdmTypes.xsd">
-    <Exec Command="&quot;C:\Program Files (x86)\Microsoft SDKs\Windows\v6.0A\bin\xsd.exe&quot; Data\xsd\Finance.xsd Data\xsd\Qbo.xsd /classes /namespace:Intuit.Sb.Cdm.V2 /out:Social\Intuit\Data" />
+    <Exec Command="&quot;C:\Program Files (x86)\Microsoft SDKs\Windows\v6.0A\bin\xsd.exe&quot; Data\xsd\CompanyMetaData.xsd Data\xsd\Qbo.xsd Data\xsd\UserResponse.xsd Data\xsd\Finance.xsd /classes /namespace:Intuit.Sb.Cdm.V2 /out:Social\Intuit\Data" />
   </Target>
   <Target Name="BeforeBuild" DependsOnTargets="GenerateSerializationClasses">
   </Target>

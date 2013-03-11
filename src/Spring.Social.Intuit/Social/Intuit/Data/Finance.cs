@@ -20,6 +20,50 @@ namespace Intuit.Sb.Cdm.V2 {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class RestResponse {
+        
+        private CompaniesMetaData companiesMetaDataField;
+        
+        /// <remarks/>
+        public CompaniesMetaData CompaniesMetaData {
+            get {
+                return this.companiesMetaDataField;
+            }
+            set {
+                this.companiesMetaDataField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class CompaniesMetaData : CdmCollections {
+        
+        private CompanyMetaData[] companyMetaDataField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("CompanyMetaData")]
+        public CompanyMetaData[] CompanyMetaData {
+            get {
+                return this.companyMetaDataField;
+            }
+            set {
+                this.companyMetaDataField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
     public partial class CompanyMetaData {
@@ -654,6 +698,959 @@ namespace Intuit.Sb.Cdm.V2 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Preferences {
+        
+        private bool usingAccountNumbersField;
+        
+        private bool requiringAccountsField;
+        
+        private bool usingClassesField;
+        
+        private System.DateTime closingDateField;
+        
+        private bool closingDateFieldSpecified;
+        
+        private bool usingMultiCurrencyField;
+        
+        private currencyCode homeCurrencyField;
+        
+        private bool homeCurrencyFieldSpecified;
+        
+        private bool usingInventoryField;
+        
+        private string daysBillsAreDueField;
+        
+        private IdType discountAccountIdField;
+        
+        private string discountAccountNameField;
+        
+        private IdType shipMethodIdField;
+        
+        private string shipMethodNameField;
+        
+        private decimal defaultMarkupField;
+        
+        private bool trackReimbursableExpensesField;
+        
+        private bool autoApplyPaymentsField;
+        
+        private IdType taxIdField;
+        
+        private string taxNameField;
+        
+        private IdType taxGroupIdField;
+        
+        private string taxGroupNameField;
+        
+        private PaySalesTaxEnum paySalesTaxField;
+        
+        private bool paySalesTaxFieldSpecified;
+        
+        /// <remarks/>
+        public bool UsingAccountNumbers {
+            get {
+                return this.usingAccountNumbersField;
+            }
+            set {
+                this.usingAccountNumbersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool RequiringAccounts {
+            get {
+                return this.requiringAccountsField;
+            }
+            set {
+                this.requiringAccountsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool UsingClasses {
+            get {
+                return this.usingClassesField;
+            }
+            set {
+                this.usingClassesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
+        public System.DateTime ClosingDate {
+            get {
+                return this.closingDateField;
+            }
+            set {
+                this.closingDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ClosingDateSpecified {
+            get {
+                return this.closingDateFieldSpecified;
+            }
+            set {
+                this.closingDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool UsingMultiCurrency {
+            get {
+                return this.usingMultiCurrencyField;
+            }
+            set {
+                this.usingMultiCurrencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public currencyCode HomeCurrency {
+            get {
+                return this.homeCurrencyField;
+            }
+            set {
+                this.homeCurrencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool HomeCurrencySpecified {
+            get {
+                return this.homeCurrencyFieldSpecified;
+            }
+            set {
+                this.homeCurrencyFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool UsingInventory {
+            get {
+                return this.usingInventoryField;
+            }
+            set {
+                this.usingInventoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="positiveInteger")]
+        public string DaysBillsAreDue {
+            get {
+                return this.daysBillsAreDueField;
+            }
+            set {
+                this.daysBillsAreDueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType DiscountAccountId {
+            get {
+                return this.discountAccountIdField;
+            }
+            set {
+                this.discountAccountIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string DiscountAccountName {
+            get {
+                return this.discountAccountNameField;
+            }
+            set {
+                this.discountAccountNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType ShipMethodId {
+            get {
+                return this.shipMethodIdField;
+            }
+            set {
+                this.shipMethodIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ShipMethodName {
+            get {
+                return this.shipMethodNameField;
+            }
+            set {
+                this.shipMethodNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal DefaultMarkup {
+            get {
+                return this.defaultMarkupField;
+            }
+            set {
+                this.defaultMarkupField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool TrackReimbursableExpenses {
+            get {
+                return this.trackReimbursableExpensesField;
+            }
+            set {
+                this.trackReimbursableExpensesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool AutoApplyPayments {
+            get {
+                return this.autoApplyPaymentsField;
+            }
+            set {
+                this.autoApplyPaymentsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType TaxId {
+            get {
+                return this.taxIdField;
+            }
+            set {
+                this.taxIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TaxName {
+            get {
+                return this.taxNameField;
+            }
+            set {
+                this.taxNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType TaxGroupId {
+            get {
+                return this.taxGroupIdField;
+            }
+            set {
+                this.taxGroupIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TaxGroupName {
+            get {
+                return this.taxGroupNameField;
+            }
+            set {
+                this.taxGroupNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public PaySalesTaxEnum PaySalesTax {
+            get {
+                return this.paySalesTaxField;
+            }
+            set {
+                this.paySalesTaxField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PaySalesTaxSpecified {
+            get {
+                return this.paySalesTaxFieldSpecified;
+            }
+            set {
+                this.paySalesTaxFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public enum currencyCode {
+        
+        /// <remarks/>
+        AED,
+        
+        /// <remarks/>
+        AFA,
+        
+        /// <remarks/>
+        ALL,
+        
+        /// <remarks/>
+        ANG,
+        
+        /// <remarks/>
+        AOA,
+        
+        /// <remarks/>
+        AOK,
+        
+        /// <remarks/>
+        ARP,
+        
+        /// <remarks/>
+        ARS,
+        
+        /// <remarks/>
+        AMD,
+        
+        /// <remarks/>
+        ATS,
+        
+        /// <remarks/>
+        AUD,
+        
+        /// <remarks/>
+        AWF,
+        
+        /// <remarks/>
+        AWG,
+        
+        /// <remarks/>
+        AZM,
+        
+        /// <remarks/>
+        BAM,
+        
+        /// <remarks/>
+        BBD,
+        
+        /// <remarks/>
+        BDT,
+        
+        /// <remarks/>
+        BEF,
+        
+        /// <remarks/>
+        BGL,
+        
+        /// <remarks/>
+        BHD,
+        
+        /// <remarks/>
+        BIF,
+        
+        /// <remarks/>
+        BMD,
+        
+        /// <remarks/>
+        BND,
+        
+        /// <remarks/>
+        BOB,
+        
+        /// <remarks/>
+        BRC,
+        
+        /// <remarks/>
+        BRL,
+        
+        /// <remarks/>
+        BSD,
+        
+        /// <remarks/>
+        BTN,
+        
+        /// <remarks/>
+        BUK,
+        
+        /// <remarks/>
+        BWP,
+        
+        /// <remarks/>
+        BYR,
+        
+        /// <remarks/>
+        BYB,
+        
+        /// <remarks/>
+        BZD,
+        
+        /// <remarks/>
+        CAD,
+        
+        /// <remarks/>
+        CDF,
+        
+        /// <remarks/>
+        CHF,
+        
+        /// <remarks/>
+        CLP,
+        
+        /// <remarks/>
+        CNY,
+        
+        /// <remarks/>
+        COP,
+        
+        /// <remarks/>
+        CRC,
+        
+        /// <remarks/>
+        CZK,
+        
+        /// <remarks/>
+        CUP,
+        
+        /// <remarks/>
+        CVE,
+        
+        /// <remarks/>
+        DDM,
+        
+        /// <remarks/>
+        DEM,
+        
+        /// <remarks/>
+        DJF,
+        
+        /// <remarks/>
+        DKK,
+        
+        /// <remarks/>
+        DOP,
+        
+        /// <remarks/>
+        DZD,
+        
+        /// <remarks/>
+        ECS,
+        
+        /// <remarks/>
+        EEK,
+        
+        /// <remarks/>
+        EGP,
+        
+        /// <remarks/>
+        ERN,
+        
+        /// <remarks/>
+        ESP,
+        
+        /// <remarks/>
+        ETB,
+        
+        /// <remarks/>
+        EUR,
+        
+        /// <remarks/>
+        FIM,
+        
+        /// <remarks/>
+        FJD,
+        
+        /// <remarks/>
+        FKP,
+        
+        /// <remarks/>
+        FRF,
+        
+        /// <remarks/>
+        GBP,
+        
+        /// <remarks/>
+        GEL,
+        
+        /// <remarks/>
+        GHC,
+        
+        /// <remarks/>
+        GIP,
+        
+        /// <remarks/>
+        GMD,
+        
+        /// <remarks/>
+        GNF,
+        
+        /// <remarks/>
+        GRD,
+        
+        /// <remarks/>
+        GTQ,
+        
+        /// <remarks/>
+        GWP,
+        
+        /// <remarks/>
+        GYD,
+        
+        /// <remarks/>
+        HKD,
+        
+        /// <remarks/>
+        HNL,
+        
+        /// <remarks/>
+        HRK,
+        
+        /// <remarks/>
+        HTG,
+        
+        /// <remarks/>
+        HUF,
+        
+        /// <remarks/>
+        IDR,
+        
+        /// <remarks/>
+        IEP,
+        
+        /// <remarks/>
+        ILS,
+        
+        /// <remarks/>
+        INR,
+        
+        /// <remarks/>
+        IQD,
+        
+        /// <remarks/>
+        IRR,
+        
+        /// <remarks/>
+        ISK,
+        
+        /// <remarks/>
+        ITL,
+        
+        /// <remarks/>
+        JMD,
+        
+        /// <remarks/>
+        JOD,
+        
+        /// <remarks/>
+        KES,
+        
+        /// <remarks/>
+        KGS,
+        
+        /// <remarks/>
+        KHR,
+        
+        /// <remarks/>
+        KMF,
+        
+        /// <remarks/>
+        KPW,
+        
+        /// <remarks/>
+        KRW,
+        
+        /// <remarks/>
+        KWD,
+        
+        /// <remarks/>
+        KYD,
+        
+        /// <remarks/>
+        KZT,
+        
+        /// <remarks/>
+        LAK,
+        
+        /// <remarks/>
+        LBP,
+        
+        /// <remarks/>
+        LKR,
+        
+        /// <remarks/>
+        LRD,
+        
+        /// <remarks/>
+        LSL,
+        
+        /// <remarks/>
+        LTL,
+        
+        /// <remarks/>
+        LUF,
+        
+        /// <remarks/>
+        LVL,
+        
+        /// <remarks/>
+        LYD,
+        
+        /// <remarks/>
+        MAD,
+        
+        /// <remarks/>
+        MDL,
+        
+        /// <remarks/>
+        MGF,
+        
+        /// <remarks/>
+        MKD,
+        
+        /// <remarks/>
+        MMK,
+        
+        /// <remarks/>
+        MNT,
+        
+        /// <remarks/>
+        MOP,
+        
+        /// <remarks/>
+        MRO,
+        
+        /// <remarks/>
+        MUR,
+        
+        /// <remarks/>
+        MVR,
+        
+        /// <remarks/>
+        MWK,
+        
+        /// <remarks/>
+        MXN,
+        
+        /// <remarks/>
+        MXP,
+        
+        /// <remarks/>
+        MYR,
+        
+        /// <remarks/>
+        MZM,
+        
+        /// <remarks/>
+        NAD,
+        
+        /// <remarks/>
+        NGN,
+        
+        /// <remarks/>
+        NIC,
+        
+        /// <remarks/>
+        NIO,
+        
+        /// <remarks/>
+        NLG,
+        
+        /// <remarks/>
+        NOK,
+        
+        /// <remarks/>
+        NPR,
+        
+        /// <remarks/>
+        NZD,
+        
+        /// <remarks/>
+        OMR,
+        
+        /// <remarks/>
+        PAB,
+        
+        /// <remarks/>
+        PEN,
+        
+        /// <remarks/>
+        PES,
+        
+        /// <remarks/>
+        PGK,
+        
+        /// <remarks/>
+        PHP,
+        
+        /// <remarks/>
+        PKR,
+        
+        /// <remarks/>
+        PLN,
+        
+        /// <remarks/>
+        PLZ,
+        
+        /// <remarks/>
+        PTE,
+        
+        /// <remarks/>
+        PYG,
+        
+        /// <remarks/>
+        QAR,
+        
+        /// <remarks/>
+        ROL,
+        
+        /// <remarks/>
+        RUR,
+        
+        /// <remarks/>
+        RWF,
+        
+        /// <remarks/>
+        SAR,
+        
+        /// <remarks/>
+        SBD,
+        
+        /// <remarks/>
+        SCR,
+        
+        /// <remarks/>
+        SDD,
+        
+        /// <remarks/>
+        SDP,
+        
+        /// <remarks/>
+        SEK,
+        
+        /// <remarks/>
+        SGD,
+        
+        /// <remarks/>
+        SHP,
+        
+        /// <remarks/>
+        SIT,
+        
+        /// <remarks/>
+        SKK,
+        
+        /// <remarks/>
+        SLL,
+        
+        /// <remarks/>
+        SM,
+        
+        /// <remarks/>
+        SOS,
+        
+        /// <remarks/>
+        SRG,
+        
+        /// <remarks/>
+        STD,
+        
+        /// <remarks/>
+        SUR,
+        
+        /// <remarks/>
+        SVC,
+        
+        /// <remarks/>
+        SYP,
+        
+        /// <remarks/>
+        SZL,
+        
+        /// <remarks/>
+        THB,
+        
+        /// <remarks/>
+        TMM,
+        
+        /// <remarks/>
+        TND,
+        
+        /// <remarks/>
+        TOP,
+        
+        /// <remarks/>
+        TRL,
+        
+        /// <remarks/>
+        TTD,
+        
+        /// <remarks/>
+        TWD,
+        
+        /// <remarks/>
+        TZS,
+        
+        /// <remarks/>
+        UAH,
+        
+        /// <remarks/>
+        UGS,
+        
+        /// <remarks/>
+        UGX,
+        
+        /// <remarks/>
+        USD,
+        
+        /// <remarks/>
+        UYP,
+        
+        /// <remarks/>
+        UYU,
+        
+        /// <remarks/>
+        UZS,
+        
+        /// <remarks/>
+        VND,
+        
+        /// <remarks/>
+        VUV,
+        
+        /// <remarks/>
+        VAL,
+        
+        /// <remarks/>
+        WST,
+        
+        /// <remarks/>
+        XAF,
+        
+        /// <remarks/>
+        XCD,
+        
+        /// <remarks/>
+        XOF,
+        
+        /// <remarks/>
+        XPF,
+        
+        /// <remarks/>
+        YER,
+        
+        /// <remarks/>
+        YUD,
+        
+        /// <remarks/>
+        ZAR,
+        
+        /// <remarks/>
+        ZMK,
+        
+        /// <remarks/>
+        ZRZ,
+        
+        /// <remarks/>
+        ZWD,
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExternalKey))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class IdType {
+        
+        private idDomainEnum idDomainField;
+        
+        private string valueField;
+        
+        public IdType() {
+            this.idDomainField = idDomainEnum.NG;
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [System.ComponentModel.DefaultValueAttribute(idDomainEnum.NG)]
+        public idDomainEnum idDomain {
+            get {
+                return this.idDomainField;
+            }
+            set {
+                this.idDomainField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public enum idDomainEnum {
+        
+        /// <remarks/>
+        BM,
+        
+        /// <remarks/>
+        NG,
+        
+        /// <remarks/>
+        QB,
+        
+        /// <remarks/>
+        QBO,
+        
+        /// <remarks/>
+        QBSDK,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class ExternalKey : IdType {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public enum PaySalesTaxEnum {
+        
+        /// <remarks/>
+        Annually,
+        
+        /// <remarks/>
+        Monthly,
+        
+        /// <remarks/>
+        Quarterly,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
     public partial class UOMConvUnit {
         
         private string nameField;
@@ -737,78 +1734,6 @@ namespace Intuit.Sb.Cdm.V2 {
                 this.taxNameField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExternalKey))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class IdType {
-        
-        private idDomainEnum idDomainField;
-        
-        private string valueField;
-        
-        public IdType() {
-            this.idDomainField = idDomainEnum.NG;
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        [System.ComponentModel.DefaultValueAttribute(idDomainEnum.NG)]
-        public idDomainEnum idDomain {
-            get {
-                return this.idDomainField;
-            }
-            set {
-                this.idDomainField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlTextAttribute()]
-        public string Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public enum idDomainEnum {
-        
-        /// <remarks/>
-        BM,
-        
-        /// <remarks/>
-        NG,
-        
-        /// <remarks/>
-        QB,
-        
-        /// <remarks/>
-        QBO,
-        
-        /// <remarks/>
-        QBSDK,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class ExternalKey : IdType {
     }
     
     /// <remarks/>
@@ -4111,580 +5036,6 @@ namespace Intuit.Sb.Cdm.V2 {
                 this.statusField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public enum currencyCode {
-        
-        /// <remarks/>
-        AED,
-        
-        /// <remarks/>
-        AFA,
-        
-        /// <remarks/>
-        ALL,
-        
-        /// <remarks/>
-        ANG,
-        
-        /// <remarks/>
-        AOA,
-        
-        /// <remarks/>
-        AOK,
-        
-        /// <remarks/>
-        ARP,
-        
-        /// <remarks/>
-        ARS,
-        
-        /// <remarks/>
-        AMD,
-        
-        /// <remarks/>
-        ATS,
-        
-        /// <remarks/>
-        AUD,
-        
-        /// <remarks/>
-        AWF,
-        
-        /// <remarks/>
-        AWG,
-        
-        /// <remarks/>
-        AZM,
-        
-        /// <remarks/>
-        BAM,
-        
-        /// <remarks/>
-        BBD,
-        
-        /// <remarks/>
-        BDT,
-        
-        /// <remarks/>
-        BEF,
-        
-        /// <remarks/>
-        BGL,
-        
-        /// <remarks/>
-        BHD,
-        
-        /// <remarks/>
-        BIF,
-        
-        /// <remarks/>
-        BMD,
-        
-        /// <remarks/>
-        BND,
-        
-        /// <remarks/>
-        BOB,
-        
-        /// <remarks/>
-        BRC,
-        
-        /// <remarks/>
-        BRL,
-        
-        /// <remarks/>
-        BSD,
-        
-        /// <remarks/>
-        BTN,
-        
-        /// <remarks/>
-        BUK,
-        
-        /// <remarks/>
-        BWP,
-        
-        /// <remarks/>
-        BYR,
-        
-        /// <remarks/>
-        BYB,
-        
-        /// <remarks/>
-        BZD,
-        
-        /// <remarks/>
-        CAD,
-        
-        /// <remarks/>
-        CDF,
-        
-        /// <remarks/>
-        CHF,
-        
-        /// <remarks/>
-        CLP,
-        
-        /// <remarks/>
-        CNY,
-        
-        /// <remarks/>
-        COP,
-        
-        /// <remarks/>
-        CRC,
-        
-        /// <remarks/>
-        CZK,
-        
-        /// <remarks/>
-        CUP,
-        
-        /// <remarks/>
-        CVE,
-        
-        /// <remarks/>
-        DDM,
-        
-        /// <remarks/>
-        DEM,
-        
-        /// <remarks/>
-        DJF,
-        
-        /// <remarks/>
-        DKK,
-        
-        /// <remarks/>
-        DOP,
-        
-        /// <remarks/>
-        DZD,
-        
-        /// <remarks/>
-        ECS,
-        
-        /// <remarks/>
-        EEK,
-        
-        /// <remarks/>
-        EGP,
-        
-        /// <remarks/>
-        ERN,
-        
-        /// <remarks/>
-        ESP,
-        
-        /// <remarks/>
-        ETB,
-        
-        /// <remarks/>
-        EUR,
-        
-        /// <remarks/>
-        FIM,
-        
-        /// <remarks/>
-        FJD,
-        
-        /// <remarks/>
-        FKP,
-        
-        /// <remarks/>
-        FRF,
-        
-        /// <remarks/>
-        GBP,
-        
-        /// <remarks/>
-        GEL,
-        
-        /// <remarks/>
-        GHC,
-        
-        /// <remarks/>
-        GIP,
-        
-        /// <remarks/>
-        GMD,
-        
-        /// <remarks/>
-        GNF,
-        
-        /// <remarks/>
-        GRD,
-        
-        /// <remarks/>
-        GTQ,
-        
-        /// <remarks/>
-        GWP,
-        
-        /// <remarks/>
-        GYD,
-        
-        /// <remarks/>
-        HKD,
-        
-        /// <remarks/>
-        HNL,
-        
-        /// <remarks/>
-        HRK,
-        
-        /// <remarks/>
-        HTG,
-        
-        /// <remarks/>
-        HUF,
-        
-        /// <remarks/>
-        IDR,
-        
-        /// <remarks/>
-        IEP,
-        
-        /// <remarks/>
-        ILS,
-        
-        /// <remarks/>
-        INR,
-        
-        /// <remarks/>
-        IQD,
-        
-        /// <remarks/>
-        IRR,
-        
-        /// <remarks/>
-        ISK,
-        
-        /// <remarks/>
-        ITL,
-        
-        /// <remarks/>
-        JMD,
-        
-        /// <remarks/>
-        JOD,
-        
-        /// <remarks/>
-        KES,
-        
-        /// <remarks/>
-        KGS,
-        
-        /// <remarks/>
-        KHR,
-        
-        /// <remarks/>
-        KMF,
-        
-        /// <remarks/>
-        KPW,
-        
-        /// <remarks/>
-        KRW,
-        
-        /// <remarks/>
-        KWD,
-        
-        /// <remarks/>
-        KYD,
-        
-        /// <remarks/>
-        KZT,
-        
-        /// <remarks/>
-        LAK,
-        
-        /// <remarks/>
-        LBP,
-        
-        /// <remarks/>
-        LKR,
-        
-        /// <remarks/>
-        LRD,
-        
-        /// <remarks/>
-        LSL,
-        
-        /// <remarks/>
-        LTL,
-        
-        /// <remarks/>
-        LUF,
-        
-        /// <remarks/>
-        LVL,
-        
-        /// <remarks/>
-        LYD,
-        
-        /// <remarks/>
-        MAD,
-        
-        /// <remarks/>
-        MDL,
-        
-        /// <remarks/>
-        MGF,
-        
-        /// <remarks/>
-        MKD,
-        
-        /// <remarks/>
-        MMK,
-        
-        /// <remarks/>
-        MNT,
-        
-        /// <remarks/>
-        MOP,
-        
-        /// <remarks/>
-        MRO,
-        
-        /// <remarks/>
-        MUR,
-        
-        /// <remarks/>
-        MVR,
-        
-        /// <remarks/>
-        MWK,
-        
-        /// <remarks/>
-        MXN,
-        
-        /// <remarks/>
-        MXP,
-        
-        /// <remarks/>
-        MYR,
-        
-        /// <remarks/>
-        MZM,
-        
-        /// <remarks/>
-        NAD,
-        
-        /// <remarks/>
-        NGN,
-        
-        /// <remarks/>
-        NIC,
-        
-        /// <remarks/>
-        NIO,
-        
-        /// <remarks/>
-        NLG,
-        
-        /// <remarks/>
-        NOK,
-        
-        /// <remarks/>
-        NPR,
-        
-        /// <remarks/>
-        NZD,
-        
-        /// <remarks/>
-        OMR,
-        
-        /// <remarks/>
-        PAB,
-        
-        /// <remarks/>
-        PEN,
-        
-        /// <remarks/>
-        PES,
-        
-        /// <remarks/>
-        PGK,
-        
-        /// <remarks/>
-        PHP,
-        
-        /// <remarks/>
-        PKR,
-        
-        /// <remarks/>
-        PLN,
-        
-        /// <remarks/>
-        PLZ,
-        
-        /// <remarks/>
-        PTE,
-        
-        /// <remarks/>
-        PYG,
-        
-        /// <remarks/>
-        QAR,
-        
-        /// <remarks/>
-        ROL,
-        
-        /// <remarks/>
-        RUR,
-        
-        /// <remarks/>
-        RWF,
-        
-        /// <remarks/>
-        SAR,
-        
-        /// <remarks/>
-        SBD,
-        
-        /// <remarks/>
-        SCR,
-        
-        /// <remarks/>
-        SDD,
-        
-        /// <remarks/>
-        SDP,
-        
-        /// <remarks/>
-        SEK,
-        
-        /// <remarks/>
-        SGD,
-        
-        /// <remarks/>
-        SHP,
-        
-        /// <remarks/>
-        SIT,
-        
-        /// <remarks/>
-        SKK,
-        
-        /// <remarks/>
-        SLL,
-        
-        /// <remarks/>
-        SM,
-        
-        /// <remarks/>
-        SOS,
-        
-        /// <remarks/>
-        SRG,
-        
-        /// <remarks/>
-        STD,
-        
-        /// <remarks/>
-        SUR,
-        
-        /// <remarks/>
-        SVC,
-        
-        /// <remarks/>
-        SYP,
-        
-        /// <remarks/>
-        SZL,
-        
-        /// <remarks/>
-        THB,
-        
-        /// <remarks/>
-        TMM,
-        
-        /// <remarks/>
-        TND,
-        
-        /// <remarks/>
-        TOP,
-        
-        /// <remarks/>
-        TRL,
-        
-        /// <remarks/>
-        TTD,
-        
-        /// <remarks/>
-        TWD,
-        
-        /// <remarks/>
-        TZS,
-        
-        /// <remarks/>
-        UAH,
-        
-        /// <remarks/>
-        UGS,
-        
-        /// <remarks/>
-        UGX,
-        
-        /// <remarks/>
-        USD,
-        
-        /// <remarks/>
-        UYP,
-        
-        /// <remarks/>
-        UYU,
-        
-        /// <remarks/>
-        UZS,
-        
-        /// <remarks/>
-        VND,
-        
-        /// <remarks/>
-        VUV,
-        
-        /// <remarks/>
-        VAL,
-        
-        /// <remarks/>
-        WST,
-        
-        /// <remarks/>
-        XAF,
-        
-        /// <remarks/>
-        XCD,
-        
-        /// <remarks/>
-        XOF,
-        
-        /// <remarks/>
-        XPF,
-        
-        /// <remarks/>
-        YER,
-        
-        /// <remarks/>
-        YUD,
-        
-        /// <remarks/>
-        ZAR,
-        
-        /// <remarks/>
-        ZMK,
-        
-        /// <remarks/>
-        ZRZ,
-        
-        /// <remarks/>
-        ZWD,
     }
     
     /// <remarks/>
@@ -8680,6 +9031,492 @@ namespace Intuit.Sb.Cdm.V2 {
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BooleanTypeCustomFieldDefinition))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DateTypeCustomFieldDefinition))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NumberTypeCustomFieldDefinition))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(StringTypeCustomFieldDefinition))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public abstract partial class CustomFieldDefinition {
+        
+        private string idField;
+        
+        private string cdmTypeField;
+        
+        private string nameField;
+        
+        private bool hiddenField;
+        
+        private bool requiredField;
+        
+        public CustomFieldDefinition() {
+            this.hiddenField = false;
+            this.requiredField = false;
+        }
+        
+        /// <remarks/>
+        public string Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CdmType {
+            get {
+                return this.cdmTypeField;
+            }
+            set {
+                this.cdmTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool Hidden {
+            get {
+                return this.hiddenField;
+            }
+            set {
+                this.hiddenField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool Required {
+            get {
+                return this.requiredField;
+            }
+            set {
+                this.requiredField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class BooleanTypeCustomFieldDefinition : CustomFieldDefinition {
+        
+        private bool defaultValueField;
+        
+        private bool defaultValueFieldSpecified;
+        
+        /// <remarks/>
+        public bool DefaultValue {
+            get {
+                return this.defaultValueField;
+            }
+            set {
+                this.defaultValueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DefaultValueSpecified {
+            get {
+                return this.defaultValueFieldSpecified;
+            }
+            set {
+                this.defaultValueFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class DateTypeCustomFieldDefinition : CustomFieldDefinition {
+        
+        private System.DateTime defaultDateField;
+        
+        private bool defaultDateFieldSpecified;
+        
+        private System.DateTime minDateField;
+        
+        private bool minDateFieldSpecified;
+        
+        private System.DateTime maxDateField;
+        
+        private bool maxDateFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="time")]
+        public System.DateTime DefaultDate {
+            get {
+                return this.defaultDateField;
+            }
+            set {
+                this.defaultDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DefaultDateSpecified {
+            get {
+                return this.defaultDateFieldSpecified;
+            }
+            set {
+                this.defaultDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="time")]
+        public System.DateTime MinDate {
+            get {
+                return this.minDateField;
+            }
+            set {
+                this.minDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MinDateSpecified {
+            get {
+                return this.minDateFieldSpecified;
+            }
+            set {
+                this.minDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="time")]
+        public System.DateTime MaxDate {
+            get {
+                return this.maxDateField;
+            }
+            set {
+                this.maxDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaxDateSpecified {
+            get {
+                return this.maxDateFieldSpecified;
+            }
+            set {
+                this.maxDateFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class NumberTypeCustomFieldDefinition : CustomFieldDefinition {
+        
+        private decimal defaultValueField;
+        
+        private bool defaultValueFieldSpecified;
+        
+        private decimal minValueField;
+        
+        private bool minValueFieldSpecified;
+        
+        private decimal maxValueField;
+        
+        private bool maxValueFieldSpecified;
+        
+        /// <remarks/>
+        public decimal DefaultValue {
+            get {
+                return this.defaultValueField;
+            }
+            set {
+                this.defaultValueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DefaultValueSpecified {
+            get {
+                return this.defaultValueFieldSpecified;
+            }
+            set {
+                this.defaultValueFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal MinValue {
+            get {
+                return this.minValueField;
+            }
+            set {
+                this.minValueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MinValueSpecified {
+            get {
+                return this.minValueFieldSpecified;
+            }
+            set {
+                this.minValueFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal MaxValue {
+            get {
+                return this.maxValueField;
+            }
+            set {
+                this.maxValueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaxValueSpecified {
+            get {
+                return this.maxValueFieldSpecified;
+            }
+            set {
+                this.maxValueFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class StringTypeCustomFieldDefinition : CustomFieldDefinition {
+        
+        private string defaultStringField;
+        
+        private string regularExpressionField;
+        
+        private int maxLengthField;
+        
+        private bool maxLengthFieldSpecified;
+        
+        /// <remarks/>
+        public string DefaultString {
+            get {
+                return this.defaultStringField;
+            }
+            set {
+                this.defaultStringField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RegularExpression {
+            get {
+                return this.regularExpressionField;
+            }
+            set {
+                this.regularExpressionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int MaxLength {
+            get {
+                return this.maxLengthField;
+            }
+            set {
+                this.maxLengthField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaxLengthSpecified {
+            get {
+                return this.maxLengthFieldSpecified;
+            }
+            set {
+                this.maxLengthFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BooleanTypeCustomField))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DateTypeCustomField))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NumberTypeCustomField))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(StringTypeCustomField))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public abstract partial class CustomField {
+        
+        private string definitionIdField;
+        
+        /// <remarks/>
+        public string DefinitionId {
+            get {
+                return this.definitionIdField;
+            }
+            set {
+                this.definitionIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class BooleanTypeCustomField : CustomField {
+        
+        private bool valueField;
+        
+        public BooleanTypeCustomField() {
+            this.valueField = false;
+        }
+        
+        /// <remarks/>
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class DateTypeCustomField : CustomField {
+        
+        private System.DateTime valueField;
+        
+        private bool valueFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="time")]
+        public System.DateTime Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ValueSpecified {
+            get {
+                return this.valueFieldSpecified;
+            }
+            set {
+                this.valueFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class NumberTypeCustomField : CustomField {
+        
+        private decimal valueField;
+        
+        private bool valueFieldSpecified;
+        
+        /// <remarks/>
+        public decimal Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ValueSpecified {
+            get {
+                return this.valueFieldSpecified;
+            }
+            set {
+                this.valueFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class StringTypeCustomField : CustomField {
+        
+        private string valueField;
+        
+        /// <remarks/>
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -8955,6 +9792,3014 @@ namespace Intuit.Sb.Cdm.V2 {
             }
             set {
                 this.alternateIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class VendorCreditToApply : CdmBase {
+        
+        private TxnTypeEnum txnTypeField;
+        
+        private bool txnTypeFieldSpecified;
+        
+        private IdType vendorIdField;
+        
+        private string vendorNameField;
+        
+        private IdType aPAccountIdField;
+        
+        private string aPAccountNameField;
+        
+        private string docNumberField;
+        
+        private System.DateTime txnDateField;
+        
+        private bool txnDateFieldSpecified;
+        
+        private decimal creditRemainingField;
+        
+        private bool creditRemainingFieldSpecified;
+        
+        private currencyCode currencyField;
+        
+        private bool currencyFieldSpecified;
+        
+        /// <remarks/>
+        public TxnTypeEnum TxnType {
+            get {
+                return this.txnTypeField;
+            }
+            set {
+                this.txnTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TxnTypeSpecified {
+            get {
+                return this.txnTypeFieldSpecified;
+            }
+            set {
+                this.txnTypeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType VendorId {
+            get {
+                return this.vendorIdField;
+            }
+            set {
+                this.vendorIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VendorName {
+            get {
+                return this.vendorNameField;
+            }
+            set {
+                this.vendorNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType APAccountId {
+            get {
+                return this.aPAccountIdField;
+            }
+            set {
+                this.aPAccountIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string APAccountName {
+            get {
+                return this.aPAccountNameField;
+            }
+            set {
+                this.aPAccountNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string DocNumber {
+            get {
+                return this.docNumberField;
+            }
+            set {
+                this.docNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
+        public System.DateTime TxnDate {
+            get {
+                return this.txnDateField;
+            }
+            set {
+                this.txnDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TxnDateSpecified {
+            get {
+                return this.txnDateFieldSpecified;
+            }
+            set {
+                this.txnDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal CreditRemaining {
+            get {
+                return this.creditRemainingField;
+            }
+            set {
+                this.creditRemainingField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CreditRemainingSpecified {
+            get {
+                return this.creditRemainingFieldSpecified;
+            }
+            set {
+                this.creditRemainingFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public currencyCode Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CurrencySpecified {
+            get {
+                return this.currencyFieldSpecified;
+            }
+            set {
+                this.currencyFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public enum TxnTypeEnum {
+        
+        /// <remarks/>
+        ARRefundCreditCard,
+        
+        /// <remarks/>
+        Bill,
+        
+        /// <remarks/>
+        BillPayment,
+        
+        /// <remarks/>
+        BuildAssembly,
+        
+        /// <remarks/>
+        CarryOver,
+        
+        /// <remarks/>
+        CashPurchase,
+        
+        /// <remarks/>
+        Charge,
+        
+        /// <remarks/>
+        Check,
+        
+        /// <remarks/>
+        CreditCardCharge,
+        
+        /// <remarks/>
+        CreditCardCredit,
+        
+        /// <remarks/>
+        CreditMemo,
+        
+        /// <remarks/>
+        Deposit,
+        
+        /// <remarks/>
+        EFPLiabilityCheck,
+        
+        /// <remarks/>
+        EFTBillPayment,
+        
+        /// <remarks/>
+        EFTRefund,
+        
+        /// <remarks/>
+        Estimate,
+        
+        /// <remarks/>
+        InventoryAdjustment,
+        
+        /// <remarks/>
+        Invoice,
+        
+        /// <remarks/>
+        ItemReceipt,
+        
+        /// <remarks/>
+        JournalEntry,
+        
+        /// <remarks/>
+        LiabilityAdjustment,
+        
+        /// <remarks/>
+        Paycheck,
+        
+        /// <remarks/>
+        PayrollLiabilityCheck,
+        
+        /// <remarks/>
+        PurchaseOrder,
+        
+        /// <remarks/>
+        PriorPayment,
+        
+        /// <remarks/>
+        ReceivePayment,
+        
+        /// <remarks/>
+        RefundCheck,
+        
+        /// <remarks/>
+        SalesOrder,
+        
+        /// <remarks/>
+        SalesReceipt,
+        
+        /// <remarks/>
+        SalesTaxPaymentCheck,
+        
+        /// <remarks/>
+        Transfer,
+        
+        /// <remarks/>
+        TimeActivity,
+        
+        /// <remarks/>
+        VendorCredit,
+        
+        /// <remarks/>
+        YTDAdjustment,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class VendorCredit : CdmBase {
+        
+        private VendorCreditHeader headerField;
+        
+        private VendorCreditLine[] lineField;
+        
+        /// <remarks/>
+        public VendorCreditHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public VendorCreditLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class UOM : CdmBase {
+        
+        private string nameField;
+        
+        private string abbrvField;
+        
+        private UOMBaseTypeEnum baseTypeField;
+        
+        private bool baseTypeFieldSpecified;
+        
+        private UOMConvUnit[] convUnitField;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Abbrv {
+            get {
+                return this.abbrvField;
+            }
+            set {
+                this.abbrvField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public UOMBaseTypeEnum BaseType {
+            get {
+                return this.baseTypeField;
+            }
+            set {
+                this.baseTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool BaseTypeSpecified {
+            get {
+                return this.baseTypeFieldSpecified;
+            }
+            set {
+                this.baseTypeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ConvUnit")]
+        public UOMConvUnit[] ConvUnit {
+            get {
+                return this.convUnitField;
+            }
+            set {
+                this.convUnitField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public enum UOMBaseTypeEnum {
+        
+        /// <remarks/>
+        Area,
+        
+        /// <remarks/>
+        Count,
+        
+        /// <remarks/>
+        Length,
+        
+        /// <remarks/>
+        Other,
+        
+        /// <remarks/>
+        Time,
+        
+        /// <remarks/>
+        Volume,
+        
+        /// <remarks/>
+        Weight,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class TxnGeneric : CdmBase {
+        
+        private TxnGenericHeader headerField;
+        
+        /// <remarks/>
+        public TxnGenericHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class TxnGenericHeader : HeaderBase {
+        
+        private TxnTypeEnum txnTypeField;
+        
+        private bool txnTypeFieldSpecified;
+        
+        private IdType accountIdField;
+        
+        private string accountNameField;
+        
+        private AccountTypeEnum accountTypeField;
+        
+        private bool accountTypeFieldSpecified;
+        
+        private IdType entityIdField;
+        
+        private string entityNameField;
+        
+        private EntityTypeEnum entityTypeField;
+        
+        private bool entityTypeFieldSpecified;
+        
+        private decimal totalAmtField;
+        
+        private bool totalAmtFieldSpecified;
+        
+        /// <remarks/>
+        public TxnTypeEnum TxnType {
+            get {
+                return this.txnTypeField;
+            }
+            set {
+                this.txnTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TxnTypeSpecified {
+            get {
+                return this.txnTypeFieldSpecified;
+            }
+            set {
+                this.txnTypeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType AccountId {
+            get {
+                return this.accountIdField;
+            }
+            set {
+                this.accountIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AccountName {
+            get {
+                return this.accountNameField;
+            }
+            set {
+                this.accountNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AccountTypeEnum AccountType {
+            get {
+                return this.accountTypeField;
+            }
+            set {
+                this.accountTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AccountTypeSpecified {
+            get {
+                return this.accountTypeFieldSpecified;
+            }
+            set {
+                this.accountTypeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType EntityId {
+            get {
+                return this.entityIdField;
+            }
+            set {
+                this.entityIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string EntityName {
+            get {
+                return this.entityNameField;
+            }
+            set {
+                this.entityNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EntityTypeEnum EntityType {
+            get {
+                return this.entityTypeField;
+            }
+            set {
+                this.entityTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool EntityTypeSpecified {
+            get {
+                return this.entityTypeFieldSpecified;
+            }
+            set {
+                this.entityTypeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal TotalAmt {
+            get {
+                return this.totalAmtField;
+            }
+            set {
+                this.totalAmtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TotalAmtSpecified {
+            get {
+                return this.totalAmtFieldSpecified;
+            }
+            set {
+                this.totalAmtFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class TimeActivity : CdmBase {
+        
+        private System.DateTime txnDateField;
+        
+        private bool txnDateFieldSpecified;
+        
+        private TimeActivityTypeEnum nameOfField;
+        
+        private bool nameOfFieldSpecified;
+        
+        private object itemField;
+        
+        private IdType customerIdField;
+        
+        private string customerNameField;
+        
+        private IdType itemIdField;
+        
+        private string itemNameField;
+        
+        private ItemTypeEnum itemTypeField;
+        
+        private bool itemTypeFieldSpecified;
+        
+        private IdType classIdField;
+        
+        private string classNameField;
+        
+        private BillableStatusEnum billableStatusField;
+        
+        private bool billableStatusFieldSpecified;
+        
+        private bool taxableField;
+        
+        private bool taxableFieldSpecified;
+        
+        private decimal hourlyRateField;
+        
+        private bool hourlyRateFieldSpecified;
+        
+        private string hoursField;
+        
+        private string minutesField;
+        
+        private string breakHoursField;
+        
+        private string breakMinutesField;
+        
+        private System.DateTime startTimeField;
+        
+        private bool startTimeFieldSpecified;
+        
+        private System.DateTime endTimeField;
+        
+        private bool endTimeFieldSpecified;
+        
+        private string descriptionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
+        public System.DateTime TxnDate {
+            get {
+                return this.txnDateField;
+            }
+            set {
+                this.txnDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TxnDateSpecified {
+            get {
+                return this.txnDateFieldSpecified;
+            }
+            set {
+                this.txnDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public TimeActivityTypeEnum NameOf {
+            get {
+                return this.nameOfField;
+            }
+            set {
+                this.nameOfField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NameOfSpecified {
+            get {
+                return this.nameOfFieldSpecified;
+            }
+            set {
+                this.nameOfFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Employee", typeof(EmployeeRef))]
+        [System.Xml.Serialization.XmlElementAttribute("Vendor", typeof(VendorRef))]
+        public object Item {
+            get {
+                return this.itemField;
+            }
+            set {
+                this.itemField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType CustomerId {
+            get {
+                return this.customerIdField;
+            }
+            set {
+                this.customerIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CustomerName {
+            get {
+                return this.customerNameField;
+            }
+            set {
+                this.customerNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType ItemId {
+            get {
+                return this.itemIdField;
+            }
+            set {
+                this.itemIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ItemName {
+            get {
+                return this.itemNameField;
+            }
+            set {
+                this.itemNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ItemTypeEnum ItemType {
+            get {
+                return this.itemTypeField;
+            }
+            set {
+                this.itemTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ItemTypeSpecified {
+            get {
+                return this.itemTypeFieldSpecified;
+            }
+            set {
+                this.itemTypeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType ClassId {
+            get {
+                return this.classIdField;
+            }
+            set {
+                this.classIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ClassName {
+            get {
+                return this.classNameField;
+            }
+            set {
+                this.classNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public BillableStatusEnum BillableStatus {
+            get {
+                return this.billableStatusField;
+            }
+            set {
+                this.billableStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool BillableStatusSpecified {
+            get {
+                return this.billableStatusFieldSpecified;
+            }
+            set {
+                this.billableStatusFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Taxable {
+            get {
+                return this.taxableField;
+            }
+            set {
+                this.taxableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TaxableSpecified {
+            get {
+                return this.taxableFieldSpecified;
+            }
+            set {
+                this.taxableFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal HourlyRate {
+            get {
+                return this.hourlyRateField;
+            }
+            set {
+                this.hourlyRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool HourlyRateSpecified {
+            get {
+                return this.hourlyRateFieldSpecified;
+            }
+            set {
+                this.hourlyRateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
+        public string Hours {
+            get {
+                return this.hoursField;
+            }
+            set {
+                this.hoursField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
+        public string Minutes {
+            get {
+                return this.minutesField;
+            }
+            set {
+                this.minutesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
+        public string BreakHours {
+            get {
+                return this.breakHoursField;
+            }
+            set {
+                this.breakHoursField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
+        public string BreakMinutes {
+            get {
+                return this.breakMinutesField;
+            }
+            set {
+                this.breakMinutesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime StartTime {
+            get {
+                return this.startTimeField;
+            }
+            set {
+                this.startTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool StartTimeSpecified {
+            get {
+                return this.startTimeFieldSpecified;
+            }
+            set {
+                this.startTimeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndTime {
+            get {
+                return this.endTimeField;
+            }
+            set {
+                this.endTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool EndTimeSpecified {
+            get {
+                return this.endTimeFieldSpecified;
+            }
+            set {
+                this.endTimeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public enum TimeActivityTypeEnum {
+        
+        /// <remarks/>
+        Employee,
+        
+        /// <remarks/>
+        Vendor,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class ShipMethod : CdmBase {
+        
+        private string nameField;
+        
+        private bool activeField;
+        
+        private bool activeFieldSpecified;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Active {
+            get {
+                return this.activeField;
+            }
+            set {
+                this.activeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ActiveSpecified {
+            get {
+                return this.activeFieldSpecified;
+            }
+            set {
+                this.activeFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class SalesTerm : CdmBase {
+        
+        private string nameField;
+        
+        private bool activeField;
+        
+        private bool activeFieldSpecified;
+        
+        private string typeField;
+        
+        private object[] itemsField;
+        
+        private ItemsChoiceType3[] itemsElementNameField;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Active {
+            get {
+                return this.activeField;
+            }
+            set {
+                this.activeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ActiveSpecified {
+            get {
+                return this.activeFieldSpecified;
+            }
+            set {
+                this.activeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("DateDiscountPercent", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("DayOfMonthDue", typeof(string), DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlElementAttribute("DiscountDayOfMonth", typeof(string), DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlElementAttribute("DiscountDays", typeof(string), DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlElementAttribute("DiscountPercent", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("DueDays", typeof(string), DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlElementAttribute("DueNextMonthDays", typeof(string), DataType="positiveInteger")]
+        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
+        public object[] Items {
+            get {
+                return this.itemsField;
+            }
+            set {
+                this.itemsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public ItemsChoiceType3[] ItemsElementName {
+            get {
+                return this.itemsElementNameField;
+            }
+            set {
+                this.itemsElementNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IncludeInSchema=false)]
+    public enum ItemsChoiceType3 {
+        
+        /// <remarks/>
+        DateDiscountPercent,
+        
+        /// <remarks/>
+        DayOfMonthDue,
+        
+        /// <remarks/>
+        DiscountDayOfMonth,
+        
+        /// <remarks/>
+        DiscountDays,
+        
+        /// <remarks/>
+        DiscountPercent,
+        
+        /// <remarks/>
+        DueDays,
+        
+        /// <remarks/>
+        DueNextMonthDays,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class SalesTaxPaymentCheck : CdmBase {
+        
+        private SalesTaxPaymentCheckHeader headerField;
+        
+        private SalesTaxPaymentCheckLine[] lineField;
+        
+        /// <remarks/>
+        public SalesTaxPaymentCheckHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public SalesTaxPaymentCheckLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class SalesTaxGroup : CdmBase {
+        
+        private string nameField;
+        
+        private string descField;
+        
+        private SalesTaxRef[] salesTaxField;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Desc {
+            get {
+                return this.descField;
+            }
+            set {
+                this.descField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SalesTax")]
+        public SalesTaxRef[] SalesTax {
+            get {
+                return this.salesTaxField;
+            }
+            set {
+                this.salesTaxField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class SalesTaxCode : CdmBase {
+        
+        private string nameField;
+        
+        private bool activeField;
+        
+        private bool activeFieldSpecified;
+        
+        private bool taxableField;
+        
+        private bool taxableFieldSpecified;
+        
+        private string descField;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Active {
+            get {
+                return this.activeField;
+            }
+            set {
+                this.activeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ActiveSpecified {
+            get {
+                return this.activeFieldSpecified;
+            }
+            set {
+                this.activeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Taxable {
+            get {
+                return this.taxableField;
+            }
+            set {
+                this.taxableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TaxableSpecified {
+            get {
+                return this.taxableFieldSpecified;
+            }
+            set {
+                this.taxableFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Desc {
+            get {
+                return this.descField;
+            }
+            set {
+                this.descField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class SalesTax : CdmBase {
+        
+        private string nameField;
+        
+        private string descField;
+        
+        private decimal taxRateField;
+        
+        private bool taxRateFieldSpecified;
+        
+        private IdType vendorIdField;
+        
+        private string vendorNameField;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Desc {
+            get {
+                return this.descField;
+            }
+            set {
+                this.descField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal TaxRate {
+            get {
+                return this.taxRateField;
+            }
+            set {
+                this.taxRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TaxRateSpecified {
+            get {
+                return this.taxRateFieldSpecified;
+            }
+            set {
+                this.taxRateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType VendorId {
+            get {
+                return this.vendorIdField;
+            }
+            set {
+                this.vendorIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VendorName {
+            get {
+                return this.vendorNameField;
+            }
+            set {
+                this.vendorNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class SalesRep : CdmBase {
+        
+        private SalesRepTypeEnum nameOfField;
+        
+        private bool nameOfFieldSpecified;
+        
+        private object itemField;
+        
+        private string initialsField;
+        
+        /// <remarks/>
+        public SalesRepTypeEnum NameOf {
+            get {
+                return this.nameOfField;
+            }
+            set {
+                this.nameOfField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NameOfSpecified {
+            get {
+                return this.nameOfFieldSpecified;
+            }
+            set {
+                this.nameOfFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Employee", typeof(EmployeeRef))]
+        [System.Xml.Serialization.XmlElementAttribute("OtherName", typeof(OtherNameRef))]
+        [System.Xml.Serialization.XmlElementAttribute("Vendor", typeof(VendorRef))]
+        public object Item {
+            get {
+                return this.itemField;
+            }
+            set {
+                this.itemField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Initials {
+            get {
+                return this.initialsField;
+            }
+            set {
+                this.initialsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public enum SalesRepTypeEnum {
+        
+        /// <remarks/>
+        Employee,
+        
+        /// <remarks/>
+        Other,
+        
+        /// <remarks/>
+        Vendor,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class SalesReceipt : CdmBase {
+        
+        private SalesReceiptHeader headerField;
+        
+        private SalesReceiptLine[] lineField;
+        
+        private TaxLine[] taxLineField;
+        
+        /// <remarks/>
+        public SalesReceiptHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public SalesReceiptLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("TaxLine")]
+        public TaxLine[] TaxLine {
+            get {
+                return this.taxLineField;
+            }
+            set {
+                this.taxLineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class SalesOrder : CdmBase {
+        
+        private SalesOrderHeader headerField;
+        
+        private SalesOrderLine[] lineField;
+        
+        private TaxLine[] taxLineField;
+        
+        /// <remarks/>
+        public SalesOrderHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public SalesOrderLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("TaxLine")]
+        public TaxLine[] TaxLine {
+            get {
+                return this.taxLineField;
+            }
+            set {
+                this.taxLineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class PurchaseOrder : CdmBase {
+        
+        private PurchaseOrderHeader headerField;
+        
+        private PurchaseOrderLine[] lineField;
+        
+        /// <remarks/>
+        public PurchaseOrderHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public PurchaseOrderLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class PaymentMethod : CdmBase {
+        
+        private string nameField;
+        
+        private bool activeField;
+        
+        private bool activeFieldSpecified;
+        
+        private string typeField;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Active {
+            get {
+                return this.activeField;
+            }
+            set {
+                this.activeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ActiveSpecified {
+            get {
+                return this.activeFieldSpecified;
+            }
+            set {
+                this.activeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Payment : CdmBase {
+        
+        private PaymentHeader headerField;
+        
+        private PaymentLine[] lineField;
+        
+        /// <remarks/>
+        public PaymentHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public PaymentLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class JournalEntry : CdmBase {
+        
+        private JournalEntryHeader headerField;
+        
+        private JournalEntryLine[] lineField;
+        
+        /// <remarks/>
+        public JournalEntryHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public JournalEntryLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class ItemReceipt : CdmBase {
+        
+        private ItemReceiptHeader headerField;
+        
+        private ItemReceiptLine[] lineField;
+        
+        /// <remarks/>
+        public ItemReceiptHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public ItemReceiptLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Item : CdmBase {
+        
+        private IdType itemParentIdField;
+        
+        private string itemParentNameField;
+        
+        private string nameField;
+        
+        private string descField;
+        
+        private bool taxableField;
+        
+        private bool taxableFieldSpecified;
+        
+        private bool activeField;
+        
+        private bool activeFieldSpecified;
+        
+        private Money unitPriceField;
+        
+        private ItemTypeEnum typeField;
+        
+        private bool typeFieldSpecified;
+        
+        private IdType uOMIdField;
+        
+        private string uOMAbbrvField;
+        
+        private AccountRef incomeAccountRefField;
+        
+        private string purchaseDescField;
+        
+        private Money purchaseCostField;
+        
+        private AccountRef expenseAccountRefField;
+        
+        private AccountRef cOGSAccountRefField;
+        
+        private AccountRef assetAccountRefField;
+        
+        private VendorRef prefVendorRefField;
+        
+        private Money avgCostField;
+        
+        private decimal qtyOnHandField;
+        
+        private bool qtyOnHandFieldSpecified;
+        
+        private decimal qtyOnPurchaseOrderField;
+        
+        private bool qtyOnPurchaseOrderFieldSpecified;
+        
+        private decimal qtyOnSalesOrderField;
+        
+        private bool qtyOnSalesOrderFieldSpecified;
+        
+        private decimal reorderPointField;
+        
+        private bool reorderPointFieldSpecified;
+        
+        private string manPartNumField;
+        
+        /// <remarks/>
+        public IdType ItemParentId {
+            get {
+                return this.itemParentIdField;
+            }
+            set {
+                this.itemParentIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ItemParentName {
+            get {
+                return this.itemParentNameField;
+            }
+            set {
+                this.itemParentNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Desc {
+            get {
+                return this.descField;
+            }
+            set {
+                this.descField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Taxable {
+            get {
+                return this.taxableField;
+            }
+            set {
+                this.taxableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TaxableSpecified {
+            get {
+                return this.taxableFieldSpecified;
+            }
+            set {
+                this.taxableFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Active {
+            get {
+                return this.activeField;
+            }
+            set {
+                this.activeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ActiveSpecified {
+            get {
+                return this.activeFieldSpecified;
+            }
+            set {
+                this.activeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Money UnitPrice {
+            get {
+                return this.unitPriceField;
+            }
+            set {
+                this.unitPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ItemTypeEnum Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TypeSpecified {
+            get {
+                return this.typeFieldSpecified;
+            }
+            set {
+                this.typeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType UOMId {
+            get {
+                return this.uOMIdField;
+            }
+            set {
+                this.uOMIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string UOMAbbrv {
+            get {
+                return this.uOMAbbrvField;
+            }
+            set {
+                this.uOMAbbrvField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AccountRef IncomeAccountRef {
+            get {
+                return this.incomeAccountRefField;
+            }
+            set {
+                this.incomeAccountRefField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PurchaseDesc {
+            get {
+                return this.purchaseDescField;
+            }
+            set {
+                this.purchaseDescField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Money PurchaseCost {
+            get {
+                return this.purchaseCostField;
+            }
+            set {
+                this.purchaseCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AccountRef ExpenseAccountRef {
+            get {
+                return this.expenseAccountRefField;
+            }
+            set {
+                this.expenseAccountRefField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AccountRef COGSAccountRef {
+            get {
+                return this.cOGSAccountRefField;
+            }
+            set {
+                this.cOGSAccountRefField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AccountRef AssetAccountRef {
+            get {
+                return this.assetAccountRefField;
+            }
+            set {
+                this.assetAccountRefField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public VendorRef PrefVendorRef {
+            get {
+                return this.prefVendorRefField;
+            }
+            set {
+                this.prefVendorRefField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Money AvgCost {
+            get {
+                return this.avgCostField;
+            }
+            set {
+                this.avgCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal QtyOnHand {
+            get {
+                return this.qtyOnHandField;
+            }
+            set {
+                this.qtyOnHandField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool QtyOnHandSpecified {
+            get {
+                return this.qtyOnHandFieldSpecified;
+            }
+            set {
+                this.qtyOnHandFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal QtyOnPurchaseOrder {
+            get {
+                return this.qtyOnPurchaseOrderField;
+            }
+            set {
+                this.qtyOnPurchaseOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool QtyOnPurchaseOrderSpecified {
+            get {
+                return this.qtyOnPurchaseOrderFieldSpecified;
+            }
+            set {
+                this.qtyOnPurchaseOrderFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal QtyOnSalesOrder {
+            get {
+                return this.qtyOnSalesOrderField;
+            }
+            set {
+                this.qtyOnSalesOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool QtyOnSalesOrderSpecified {
+            get {
+                return this.qtyOnSalesOrderFieldSpecified;
+            }
+            set {
+                this.qtyOnSalesOrderFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal ReorderPoint {
+            get {
+                return this.reorderPointField;
+            }
+            set {
+                this.reorderPointField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ReorderPointSpecified {
+            get {
+                return this.reorderPointFieldSpecified;
+            }
+            set {
+                this.reorderPointFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ManPartNum {
+            get {
+                return this.manPartNumField;
+            }
+            set {
+                this.manPartNumField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Invoice : CdmBase {
+        
+        private InvoiceHeader headerField;
+        
+        private InvoiceLine[] lineField;
+        
+        private TaxLine[] taxLineField;
+        
+        /// <remarks/>
+        public InvoiceHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public InvoiceLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("TaxLine")]
+        public TaxLine[] TaxLine {
+            get {
+                return this.taxLineField;
+            }
+            set {
+                this.taxLineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class InventoryAdjustment : CdmBase {
+        
+        private InventoryAdjustmentHeader headerField;
+        
+        private InventoryAdjustmentLine[] lineField;
+        
+        /// <remarks/>
+        public InventoryAdjustmentHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public InventoryAdjustmentLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Estimate : CdmBase {
+        
+        private EstimateHeader headerField;
+        
+        private EstimateLine[] lineField;
+        
+        private TaxLine[] taxLineField;
+        
+        /// <remarks/>
+        public EstimateHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public EstimateLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("TaxLine")]
+        public TaxLine[] TaxLine {
+            get {
+                return this.taxLineField;
+            }
+            set {
+                this.taxLineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Discount : CdmBase {
+        
+        private string nameField;
+        
+        private string descField;
+        
+        private bool taxableField;
+        
+        private bool taxableFieldSpecified;
+        
+        private bool activeField;
+        
+        private bool activeFieldSpecified;
+        
+        private object itemField;
+        
+        private IdType discountAccountIdField;
+        
+        private string discountAccountNameField;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Desc {
+            get {
+                return this.descField;
+            }
+            set {
+                this.descField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Taxable {
+            get {
+                return this.taxableField;
+            }
+            set {
+                this.taxableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TaxableSpecified {
+            get {
+                return this.taxableFieldSpecified;
+            }
+            set {
+                this.taxableFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Active {
+            get {
+                return this.activeField;
+            }
+            set {
+                this.activeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ActiveSpecified {
+            get {
+                return this.activeFieldSpecified;
+            }
+            set {
+                this.activeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Amount", typeof(Money))]
+        [System.Xml.Serialization.XmlElementAttribute("Percent", typeof(decimal))]
+        public object Item {
+            get {
+                return this.itemField;
+            }
+            set {
+                this.itemField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType DiscountAccountId {
+            get {
+                return this.discountAccountIdField;
+            }
+            set {
+                this.discountAccountIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string DiscountAccountName {
+            get {
+                return this.discountAccountNameField;
+            }
+            set {
+                this.discountAccountNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class CreditMemo : CdmBase {
+        
+        private CreditMemoHeader headerField;
+        
+        private CreditMemoLine[] lineField;
+        
+        private TaxLine[] taxLineField;
+        
+        /// <remarks/>
+        public CreditMemoHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public CreditMemoLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("TaxLine")]
+        public TaxLine[] TaxLine {
+            get {
+                return this.taxLineField;
+            }
+            set {
+                this.taxLineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class CreditCardCredit : CdmBase {
+        
+        private CreditCardCreditHeader headerField;
+        
+        private CreditCardCreditLine[] lineField;
+        
+        /// <remarks/>
+        public CreditCardCreditHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public CreditCardCreditLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class CreditCardCharge : CdmBase {
+        
+        private CreditCardChargeHeader headerField;
+        
+        private CreditCardChargeLine[] lineField;
+        
+        /// <remarks/>
+        public CreditCardChargeHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public CreditCardChargeLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Class : CdmBase {
+        
+        private string nameField;
+        
+        private IdType classParentIdField;
+        
+        private string classParentNameField;
+        
+        private bool activeField;
+        
+        private bool activeFieldSpecified;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType ClassParentId {
+            get {
+                return this.classParentIdField;
+            }
+            set {
+                this.classParentIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ClassParentName {
+            get {
+                return this.classParentNameField;
+            }
+            set {
+                this.classParentNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Active {
+            get {
+                return this.activeField;
+            }
+            set {
+                this.activeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ActiveSpecified {
+            get {
+                return this.activeFieldSpecified;
+            }
+            set {
+                this.activeFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Check : CdmBase {
+        
+        private CheckHeader headerField;
+        
+        private CheckLine[] lineField;
+        
+        /// <remarks/>
+        public CheckHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public CheckLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Charge : CdmBase {
+        
+        private ChargeHeader headerField;
+        
+        private ChargeLine lineField;
+        
+        /// <remarks/>
+        public ChargeHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ChargeLine Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class CashPurchase : CdmBase {
+        
+        private CashPurchaseHeader headerField;
+        
+        private CashPurchaseLine[] lineField;
+        
+        /// <remarks/>
+        public CashPurchaseHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public CashPurchaseLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class BillPayment : CdmBase {
+        
+        private BillPaymentHeader headerField;
+        
+        private BillPaymentLine[] lineField;
+        
+        /// <remarks/>
+        public BillPaymentHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public BillPaymentLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Bill : CdmBase {
+        
+        private BillHeader headerField;
+        
+        private BillLine[] lineField;
+        
+        /// <remarks/>
+        public BillHeader Header {
+            get {
+                return this.headerField;
+            }
+            set {
+                this.headerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Line")]
+        public BillLine[] Line {
+            get {
+                return this.lineField;
+            }
+            set {
+                this.lineField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Account : CdmBase {
+        
+        private string nameField;
+        
+        private IdType accountParentIdField;
+        
+        private string accountParentNameField;
+        
+        private string descField;
+        
+        private bool activeField;
+        
+        private bool activeFieldSpecified;
+        
+        private AccountTypeEnum typeField;
+        
+        private bool typeFieldSpecified;
+        
+        private string subtypeField;
+        
+        private string acctNumField;
+        
+        private string bankNumField;
+        
+        private string routingNumField;
+        
+        private decimal openingBalanceField;
+        
+        private bool openingBalanceFieldSpecified;
+        
+        private System.DateTime openingBalanceDateField;
+        
+        private bool openingBalanceDateFieldSpecified;
+        
+        private decimal currentBalanceField;
+        
+        private bool currentBalanceFieldSpecified;
+        
+        private decimal currentBalanceWithSubAccountsField;
+        
+        private bool currentBalanceWithSubAccountsFieldSpecified;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType AccountParentId {
+            get {
+                return this.accountParentIdField;
+            }
+            set {
+                this.accountParentIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AccountParentName {
+            get {
+                return this.accountParentNameField;
+            }
+            set {
+                this.accountParentNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Desc {
+            get {
+                return this.descField;
+            }
+            set {
+                this.descField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Active {
+            get {
+                return this.activeField;
+            }
+            set {
+                this.activeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ActiveSpecified {
+            get {
+                return this.activeFieldSpecified;
+            }
+            set {
+                this.activeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public AccountTypeEnum Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TypeSpecified {
+            get {
+                return this.typeFieldSpecified;
+            }
+            set {
+                this.typeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Subtype {
+            get {
+                return this.subtypeField;
+            }
+            set {
+                this.subtypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AcctNum {
+            get {
+                return this.acctNumField;
+            }
+            set {
+                this.acctNumField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BankNum {
+            get {
+                return this.bankNumField;
+            }
+            set {
+                this.bankNumField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoutingNum {
+            get {
+                return this.routingNumField;
+            }
+            set {
+                this.routingNumField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal OpeningBalance {
+            get {
+                return this.openingBalanceField;
+            }
+            set {
+                this.openingBalanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool OpeningBalanceSpecified {
+            get {
+                return this.openingBalanceFieldSpecified;
+            }
+            set {
+                this.openingBalanceFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
+        public System.DateTime OpeningBalanceDate {
+            get {
+                return this.openingBalanceDateField;
+            }
+            set {
+                this.openingBalanceDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool OpeningBalanceDateSpecified {
+            get {
+                return this.openingBalanceDateFieldSpecified;
+            }
+            set {
+                this.openingBalanceDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal CurrentBalance {
+            get {
+                return this.currentBalanceField;
+            }
+            set {
+                this.currentBalanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CurrentBalanceSpecified {
+            get {
+                return this.currentBalanceFieldSpecified;
+            }
+            set {
+                this.currentBalanceFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal CurrentBalanceWithSubAccounts {
+            get {
+                return this.currentBalanceWithSubAccountsField;
+            }
+            set {
+                this.currentBalanceWithSubAccountsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CurrentBalanceWithSubAccountsSpecified {
+            get {
+                return this.currentBalanceWithSubAccountsFieldSpecified;
+            }
+            set {
+                this.currentBalanceWithSubAccountsFieldSpecified = value;
             }
         }
     }
@@ -9732,1410 +13577,6 @@ namespace Intuit.Sb.Cdm.V2 {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BooleanTypeCustomField))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DateTypeCustomField))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NumberTypeCustomField))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(StringTypeCustomField))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public abstract partial class CustomField {
-        
-        private string definitionIdField;
-        
-        /// <remarks/>
-        public string DefinitionId {
-            get {
-                return this.definitionIdField;
-            }
-            set {
-                this.definitionIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class BooleanTypeCustomField : CustomField {
-        
-        private bool valueField;
-        
-        public BooleanTypeCustomField() {
-            this.valueField = false;
-        }
-        
-        /// <remarks/>
-        [System.ComponentModel.DefaultValueAttribute(false)]
-        public bool Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class DateTypeCustomField : CustomField {
-        
-        private System.DateTime valueField;
-        
-        private bool valueFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="time")]
-        public System.DateTime Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ValueSpecified {
-            get {
-                return this.valueFieldSpecified;
-            }
-            set {
-                this.valueFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class NumberTypeCustomField : CustomField {
-        
-        private decimal valueField;
-        
-        private bool valueFieldSpecified;
-        
-        /// <remarks/>
-        public decimal Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ValueSpecified {
-            get {
-                return this.valueFieldSpecified;
-            }
-            set {
-                this.valueFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class StringTypeCustomField : CustomField {
-        
-        private string valueField;
-        
-        /// <remarks/>
-        public string Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public enum TaxFormEnum {
-        
-        /// <remarks/>
-        Form1040,
-        
-        /// <remarks/>
-        Form1065,
-        
-        /// <remarks/>
-        Form1120,
-        
-        /// <remarks/>
-        Form1120S,
-        
-        /// <remarks/>
-        Form990,
-        
-        /// <remarks/>
-        Form990PF,
-        
-        /// <remarks/>
-        Form990T,
-        
-        /// <remarks/>
-        OtherOrNone,
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BooleanTypeCustomFieldDefinition))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DateTypeCustomFieldDefinition))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NumberTypeCustomFieldDefinition))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(StringTypeCustomFieldDefinition))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public abstract partial class CustomFieldDefinition {
-        
-        private string idField;
-        
-        private string cdmTypeField;
-        
-        private string nameField;
-        
-        private bool hiddenField;
-        
-        private bool requiredField;
-        
-        public CustomFieldDefinition() {
-            this.hiddenField = false;
-            this.requiredField = false;
-        }
-        
-        /// <remarks/>
-        public string Id {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CdmType {
-            get {
-                return this.cdmTypeField;
-            }
-            set {
-                this.cdmTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.ComponentModel.DefaultValueAttribute(false)]
-        public bool Hidden {
-            get {
-                return this.hiddenField;
-            }
-            set {
-                this.hiddenField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.ComponentModel.DefaultValueAttribute(false)]
-        public bool Required {
-            get {
-                return this.requiredField;
-            }
-            set {
-                this.requiredField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class BooleanTypeCustomFieldDefinition : CustomFieldDefinition {
-        
-        private bool defaultValueField;
-        
-        private bool defaultValueFieldSpecified;
-        
-        /// <remarks/>
-        public bool DefaultValue {
-            get {
-                return this.defaultValueField;
-            }
-            set {
-                this.defaultValueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool DefaultValueSpecified {
-            get {
-                return this.defaultValueFieldSpecified;
-            }
-            set {
-                this.defaultValueFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class DateTypeCustomFieldDefinition : CustomFieldDefinition {
-        
-        private System.DateTime defaultDateField;
-        
-        private bool defaultDateFieldSpecified;
-        
-        private System.DateTime minDateField;
-        
-        private bool minDateFieldSpecified;
-        
-        private System.DateTime maxDateField;
-        
-        private bool maxDateFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="time")]
-        public System.DateTime DefaultDate {
-            get {
-                return this.defaultDateField;
-            }
-            set {
-                this.defaultDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool DefaultDateSpecified {
-            get {
-                return this.defaultDateFieldSpecified;
-            }
-            set {
-                this.defaultDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="time")]
-        public System.DateTime MinDate {
-            get {
-                return this.minDateField;
-            }
-            set {
-                this.minDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MinDateSpecified {
-            get {
-                return this.minDateFieldSpecified;
-            }
-            set {
-                this.minDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="time")]
-        public System.DateTime MaxDate {
-            get {
-                return this.maxDateField;
-            }
-            set {
-                this.maxDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MaxDateSpecified {
-            get {
-                return this.maxDateFieldSpecified;
-            }
-            set {
-                this.maxDateFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class NumberTypeCustomFieldDefinition : CustomFieldDefinition {
-        
-        private decimal defaultValueField;
-        
-        private bool defaultValueFieldSpecified;
-        
-        private decimal minValueField;
-        
-        private bool minValueFieldSpecified;
-        
-        private decimal maxValueField;
-        
-        private bool maxValueFieldSpecified;
-        
-        /// <remarks/>
-        public decimal DefaultValue {
-            get {
-                return this.defaultValueField;
-            }
-            set {
-                this.defaultValueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool DefaultValueSpecified {
-            get {
-                return this.defaultValueFieldSpecified;
-            }
-            set {
-                this.defaultValueFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal MinValue {
-            get {
-                return this.minValueField;
-            }
-            set {
-                this.minValueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MinValueSpecified {
-            get {
-                return this.minValueFieldSpecified;
-            }
-            set {
-                this.minValueFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal MaxValue {
-            get {
-                return this.maxValueField;
-            }
-            set {
-                this.maxValueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MaxValueSpecified {
-            get {
-                return this.maxValueFieldSpecified;
-            }
-            set {
-                this.maxValueFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class StringTypeCustomFieldDefinition : CustomFieldDefinition {
-        
-        private string defaultStringField;
-        
-        private string regularExpressionField;
-        
-        private int maxLengthField;
-        
-        private bool maxLengthFieldSpecified;
-        
-        /// <remarks/>
-        public string DefaultString {
-            get {
-                return this.defaultStringField;
-            }
-            set {
-                this.defaultStringField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RegularExpression {
-            get {
-                return this.regularExpressionField;
-            }
-            set {
-                this.regularExpressionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int MaxLength {
-            get {
-                return this.maxLengthField;
-            }
-            set {
-                this.maxLengthField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MaxLengthSpecified {
-            get {
-                return this.maxLengthFieldSpecified;
-            }
-            set {
-                this.maxLengthFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class CustomFieldDefinitions {
-        
-        private CustomFieldDefinition[] customFieldDefinitionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CustomFieldDefinition")]
-        public CustomFieldDefinition[] CustomFieldDefinition {
-            get {
-                return this.customFieldDefinitionField;
-            }
-            set {
-                this.customFieldDefinitionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Person : CdmBase {
-        
-        private string titleField;
-        
-        private string givenNameField;
-        
-        private string middleNameField;
-        
-        private string familyNameField;
-        
-        private string suffixField;
-        
-        private gender genderField;
-        
-        private bool genderFieldSpecified;
-        
-        private System.DateTime birthDateField;
-        
-        private bool birthDateFieldSpecified;
-        
-        private string userIdField;
-        
-        private string taxIdField;
-        
-        private PhysicalAddress[] addressField;
-        
-        private TelephoneNumber[] phoneField;
-        
-        private WebSiteAddress[] webSiteField;
-        
-        private EmailAddress[] emailField;
-        
-        private roleType[] roleField;
-        
-        /// <remarks/>
-        public string Title {
-            get {
-                return this.titleField;
-            }
-            set {
-                this.titleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string GivenName {
-            get {
-                return this.givenNameField;
-            }
-            set {
-                this.givenNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string MiddleName {
-            get {
-                return this.middleNameField;
-            }
-            set {
-                this.middleNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string FamilyName {
-            get {
-                return this.familyNameField;
-            }
-            set {
-                this.familyNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Suffix {
-            get {
-                return this.suffixField;
-            }
-            set {
-                this.suffixField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public gender Gender {
-            get {
-                return this.genderField;
-            }
-            set {
-                this.genderField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool GenderSpecified {
-            get {
-                return this.genderFieldSpecified;
-            }
-            set {
-                this.genderFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
-        public System.DateTime BirthDate {
-            get {
-                return this.birthDateField;
-            }
-            set {
-                this.birthDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool BirthDateSpecified {
-            get {
-                return this.birthDateFieldSpecified;
-            }
-            set {
-                this.birthDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string UserId {
-            get {
-                return this.userIdField;
-            }
-            set {
-                this.userIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TaxId {
-            get {
-                return this.taxIdField;
-            }
-            set {
-                this.taxIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Address")]
-        public PhysicalAddress[] Address {
-            get {
-                return this.addressField;
-            }
-            set {
-                this.addressField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Phone")]
-        public TelephoneNumber[] Phone {
-            get {
-                return this.phoneField;
-            }
-            set {
-                this.phoneField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("WebSite")]
-        public WebSiteAddress[] WebSite {
-            get {
-                return this.webSiteField;
-            }
-            set {
-                this.webSiteField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Email")]
-        public EmailAddress[] Email {
-            get {
-                return this.emailField;
-            }
-            set {
-                this.emailField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Role")]
-        public roleType[] Role {
-            get {
-                return this.roleField;
-            }
-            set {
-                this.roleField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public enum roleType {
-        
-        /// <remarks/>
-        Customer,
-        
-        /// <remarks/>
-        Vendor,
-        
-        /// <remarks/>
-        Employee,
-        
-        /// <remarks/>
-        NonEmployee,
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(QboCompany))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Organization : CdmBase {
-        
-        private string orgIdField;
-        
-        private string legalNameField;
-        
-        private string dBANameField;
-        
-        private string industryField;
-        
-        private bool nonProfitField;
-        
-        private string legalStructureField;
-        
-        private string categoryField;
-        
-        private string taxIdField;
-        
-        private PhysicalAddress[] addressField;
-        
-        private TelephoneNumber[] phoneField;
-        
-        private WebSiteAddress[] webSiteField;
-        
-        private EmailAddress[] emailField;
-        
-        private roleType[] roleField;
-        
-        public Organization() {
-            this.nonProfitField = false;
-        }
-        
-        /// <remarks/>
-        public string OrgId {
-            get {
-                return this.orgIdField;
-            }
-            set {
-                this.orgIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string LegalName {
-            get {
-                return this.legalNameField;
-            }
-            set {
-                this.legalNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string DBAName {
-            get {
-                return this.dBANameField;
-            }
-            set {
-                this.dBANameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Industry {
-            get {
-                return this.industryField;
-            }
-            set {
-                this.industryField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.ComponentModel.DefaultValueAttribute(false)]
-        public bool NonProfit {
-            get {
-                return this.nonProfitField;
-            }
-            set {
-                this.nonProfitField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string LegalStructure {
-            get {
-                return this.legalStructureField;
-            }
-            set {
-                this.legalStructureField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Category {
-            get {
-                return this.categoryField;
-            }
-            set {
-                this.categoryField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TaxId {
-            get {
-                return this.taxIdField;
-            }
-            set {
-                this.taxIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Address")]
-        public PhysicalAddress[] Address {
-            get {
-                return this.addressField;
-            }
-            set {
-                this.addressField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Phone")]
-        public TelephoneNumber[] Phone {
-            get {
-                return this.phoneField;
-            }
-            set {
-                this.phoneField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("WebSite")]
-        public WebSiteAddress[] WebSite {
-            get {
-                return this.webSiteField;
-            }
-            set {
-                this.webSiteField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Email")]
-        public EmailAddress[] Email {
-            get {
-                return this.emailField;
-            }
-            set {
-                this.emailField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Role")]
-        public roleType[] Role {
-            get {
-                return this.roleField;
-            }
-            set {
-                this.roleField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo")]
-    public partial class QboCompany : Organization {
-        
-        private bool useDefaultChartOfAccountsField;
-        
-        private bool useDefaultChartOfAccountsFieldSpecified;
-        
-        private string billingCodeField;
-        
-        private string userNameField;
-        
-        private string userAuthIdField;
-        
-        /// <remarks/>
-        public bool UseDefaultChartOfAccounts {
-            get {
-                return this.useDefaultChartOfAccountsField;
-            }
-            set {
-                this.useDefaultChartOfAccountsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool UseDefaultChartOfAccountsSpecified {
-            get {
-                return this.useDefaultChartOfAccountsFieldSpecified;
-            }
-            set {
-                this.useDefaultChartOfAccountsFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string BillingCode {
-            get {
-                return this.billingCodeField;
-            }
-            set {
-                this.billingCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string UserName {
-            get {
-                return this.userNameField;
-            }
-            set {
-                this.userNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string UserAuthId {
-            get {
-                return this.userAuthIdField;
-            }
-            set {
-                this.userAuthIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Persons {
-        
-        private Person[] personField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Person")]
-        public Person[] Person {
-            get {
-                return this.personField;
-            }
-            set {
-                this.personField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Organizations {
-        
-        private Organization[] organizationField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Organization")]
-        public Organization[] Organization {
-            get {
-                return this.organizationField;
-            }
-            set {
-                this.organizationField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Party : CdmBase {
-        
-        private partyType typeOfField;
-        
-        private string nameField;
-        
-        private PhysicalAddress[] addressField;
-        
-        private TelephoneNumber[] phoneField;
-        
-        private WebSiteAddress[] webSiteField;
-        
-        private EmailAddress[] emailField;
-        
-        private string externalIdField;
-        
-        private roleType[] roleField;
-        
-        private CustomField[] customFieldField;
-        
-        /// <remarks/>
-        public partyType TypeOf {
-            get {
-                return this.typeOfField;
-            }
-            set {
-                this.typeOfField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Address")]
-        public PhysicalAddress[] Address {
-            get {
-                return this.addressField;
-            }
-            set {
-                this.addressField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Phone")]
-        public TelephoneNumber[] Phone {
-            get {
-                return this.phoneField;
-            }
-            set {
-                this.phoneField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("WebSite")]
-        public WebSiteAddress[] WebSite {
-            get {
-                return this.webSiteField;
-            }
-            set {
-                this.webSiteField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Email")]
-        public EmailAddress[] Email {
-            get {
-                return this.emailField;
-            }
-            set {
-                this.emailField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ExternalId {
-            get {
-                return this.externalIdField;
-            }
-            set {
-                this.externalIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Role")]
-        public roleType[] Role {
-            get {
-                return this.roleField;
-            }
-            set {
-                this.roleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CustomField")]
-        public CustomField[] CustomField {
-            get {
-                return this.customFieldField;
-            }
-            set {
-                this.customFieldField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Parties : CdmBase {
-        
-        private CustomFieldDefinition[] customFieldDefinitionField;
-        
-        private Party[] partyField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CustomFieldDefinition")]
-        public CustomFieldDefinition[] CustomFieldDefinition {
-            get {
-                return this.customFieldDefinitionField;
-            }
-            set {
-                this.customFieldDefinitionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Party")]
-        public Party[] Party {
-            get {
-                return this.partyField;
-            }
-            set {
-                this.partyField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Vendor : RoleBase {
-        
-        private bool activeField;
-        
-        private bool activeFieldSpecified;
-        
-        private string showAsField;
-        
-        private IdType vendorTypeIdField;
-        
-        private string vendorTypeNameField;
-        
-        private IdType salesTermIdField;
-        
-        private string salesTermNameField;
-        
-        private Money openBalanceField;
-        
-        private System.DateTime openBalanceDateField;
-        
-        private bool openBalanceDateFieldSpecified;
-        
-        private Money creditLimitField;
-        
-        private string acctNumField;
-        
-        private bool vendor1099Field;
-        
-        private bool vendor1099FieldSpecified;
-        
-        /// <remarks/>
-        public bool Active {
-            get {
-                return this.activeField;
-            }
-            set {
-                this.activeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ActiveSpecified {
-            get {
-                return this.activeFieldSpecified;
-            }
-            set {
-                this.activeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ShowAs {
-            get {
-                return this.showAsField;
-            }
-            set {
-                this.showAsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType VendorTypeId {
-            get {
-                return this.vendorTypeIdField;
-            }
-            set {
-                this.vendorTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string VendorTypeName {
-            get {
-                return this.vendorTypeNameField;
-            }
-            set {
-                this.vendorTypeNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType SalesTermId {
-            get {
-                return this.salesTermIdField;
-            }
-            set {
-                this.salesTermIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SalesTermName {
-            get {
-                return this.salesTermNameField;
-            }
-            set {
-                this.salesTermNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Money OpenBalance {
-            get {
-                return this.openBalanceField;
-            }
-            set {
-                this.openBalanceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
-        public System.DateTime OpenBalanceDate {
-            get {
-                return this.openBalanceDateField;
-            }
-            set {
-                this.openBalanceDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool OpenBalanceDateSpecified {
-            get {
-                return this.openBalanceDateFieldSpecified;
-            }
-            set {
-                this.openBalanceDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Money CreditLimit {
-            get {
-                return this.creditLimitField;
-            }
-            set {
-                this.creditLimitField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string AcctNum {
-            get {
-                return this.acctNumField;
-            }
-            set {
-                this.acctNumField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Vendor1099 {
-            get {
-                return this.vendor1099Field;
-            }
-            set {
-                this.vendor1099Field = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool Vendor1099Specified {
-            get {
-                return this.vendor1099FieldSpecified;
-            }
-            set {
-                this.vendor1099FieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -11652,87 +14093,93 @@ namespace Intuit.Sb.Cdm.V2 {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Account : CdmBase {
+    public partial class Job : Customer {
         
-        private string nameField;
+        private IdType customerIdField;
         
-        private IdType accountParentIdField;
+        private string customerNameField;
         
-        private string accountParentNameField;
+        private IdType jobParentIdField;
         
-        private string descField;
+        private string jobParentNameField;
+        
+        /// <remarks/>
+        public IdType CustomerId {
+            get {
+                return this.customerIdField;
+            }
+            set {
+                this.customerIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CustomerName {
+            get {
+                return this.customerNameField;
+            }
+            set {
+                this.customerNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType JobParentId {
+            get {
+                return this.jobParentIdField;
+            }
+            set {
+                this.jobParentIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string JobParentName {
+            get {
+                return this.jobParentNameField;
+            }
+            set {
+                this.jobParentNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Vendor : RoleBase {
         
         private bool activeField;
         
         private bool activeFieldSpecified;
         
-        private AccountTypeEnum typeField;
+        private string showAsField;
         
-        private bool typeFieldSpecified;
+        private IdType vendorTypeIdField;
         
-        private string subtypeField;
+        private string vendorTypeNameField;
+        
+        private IdType salesTermIdField;
+        
+        private string salesTermNameField;
+        
+        private Money openBalanceField;
+        
+        private System.DateTime openBalanceDateField;
+        
+        private bool openBalanceDateFieldSpecified;
+        
+        private Money creditLimitField;
         
         private string acctNumField;
         
-        private string bankNumField;
+        private bool vendor1099Field;
         
-        private string routingNumField;
-        
-        private decimal openingBalanceField;
-        
-        private bool openingBalanceFieldSpecified;
-        
-        private System.DateTime openingBalanceDateField;
-        
-        private bool openingBalanceDateFieldSpecified;
-        
-        private decimal currentBalanceField;
-        
-        private bool currentBalanceFieldSpecified;
-        
-        private decimal currentBalanceWithSubAccountsField;
-        
-        private bool currentBalanceWithSubAccountsFieldSpecified;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType AccountParentId {
-            get {
-                return this.accountParentIdField;
-            }
-            set {
-                this.accountParentIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string AccountParentName {
-            get {
-                return this.accountParentNameField;
-            }
-            set {
-                this.accountParentNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Desc {
-            get {
-                return this.descField;
-            }
-            set {
-                this.descField = value;
-            }
-        }
+        private bool vendor1099FieldSpecified;
         
         /// <remarks/>
         public bool Active {
@@ -11756,33 +14203,94 @@ namespace Intuit.Sb.Cdm.V2 {
         }
         
         /// <remarks/>
-        public AccountTypeEnum Type {
+        public string ShowAs {
             get {
-                return this.typeField;
+                return this.showAsField;
             }
             set {
-                this.typeField = value;
+                this.showAsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType VendorTypeId {
+            get {
+                return this.vendorTypeIdField;
+            }
+            set {
+                this.vendorTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string VendorTypeName {
+            get {
+                return this.vendorTypeNameField;
+            }
+            set {
+                this.vendorTypeNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public IdType SalesTermId {
+            get {
+                return this.salesTermIdField;
+            }
+            set {
+                this.salesTermIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SalesTermName {
+            get {
+                return this.salesTermNameField;
+            }
+            set {
+                this.salesTermNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Money OpenBalance {
+            get {
+                return this.openBalanceField;
+            }
+            set {
+                this.openBalanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
+        public System.DateTime OpenBalanceDate {
+            get {
+                return this.openBalanceDateField;
+            }
+            set {
+                this.openBalanceDateField = value;
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TypeSpecified {
+        public bool OpenBalanceDateSpecified {
             get {
-                return this.typeFieldSpecified;
+                return this.openBalanceDateFieldSpecified;
             }
             set {
-                this.typeFieldSpecified = value;
+                this.openBalanceDateFieldSpecified = value;
             }
         }
         
         /// <remarks/>
-        public string Subtype {
+        public Money CreditLimit {
             get {
-                return this.subtypeField;
+                return this.creditLimitField;
             }
             set {
-                this.subtypeField = value;
+                this.creditLimitField = value;
             }
         }
         
@@ -11797,107 +14305,2405 @@ namespace Intuit.Sb.Cdm.V2 {
         }
         
         /// <remarks/>
-        public string BankNum {
+        public bool Vendor1099 {
             get {
-                return this.bankNumField;
+                return this.vendor1099Field;
             }
             set {
-                this.bankNumField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoutingNum {
-            get {
-                return this.routingNumField;
-            }
-            set {
-                this.routingNumField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal OpeningBalance {
-            get {
-                return this.openingBalanceField;
-            }
-            set {
-                this.openingBalanceField = value;
+                this.vendor1099Field = value;
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool OpeningBalanceSpecified {
+        public bool Vendor1099Specified {
             get {
-                return this.openingBalanceFieldSpecified;
+                return this.vendor1099FieldSpecified;
             }
             set {
-                this.openingBalanceFieldSpecified = value;
+                this.vendor1099FieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Parties : CdmBase {
+        
+        private CustomFieldDefinition[] customFieldDefinitionField;
+        
+        private Party[] partyField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("CustomFieldDefinition")]
+        public CustomFieldDefinition[] CustomFieldDefinition {
+            get {
+                return this.customFieldDefinitionField;
+            }
+            set {
+                this.customFieldDefinitionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Party")]
+        public Party[] Party {
+            get {
+                return this.partyField;
+            }
+            set {
+                this.partyField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Party : CdmBase {
+        
+        private partyType typeOfField;
+        
+        private string nameField;
+        
+        private PhysicalAddress[] addressField;
+        
+        private TelephoneNumber[] phoneField;
+        
+        private WebSiteAddress[] webSiteField;
+        
+        private EmailAddress[] emailField;
+        
+        private string externalIdField;
+        
+        private roleType[] roleField;
+        
+        private CustomField[] customFieldField;
+        
+        /// <remarks/>
+        public partyType TypeOf {
+            get {
+                return this.typeOfField;
+            }
+            set {
+                this.typeOfField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Address")]
+        public PhysicalAddress[] Address {
+            get {
+                return this.addressField;
+            }
+            set {
+                this.addressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Phone")]
+        public TelephoneNumber[] Phone {
+            get {
+                return this.phoneField;
+            }
+            set {
+                this.phoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("WebSite")]
+        public WebSiteAddress[] WebSite {
+            get {
+                return this.webSiteField;
+            }
+            set {
+                this.webSiteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Email")]
+        public EmailAddress[] Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ExternalId {
+            get {
+                return this.externalIdField;
+            }
+            set {
+                this.externalIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Role")]
+        public roleType[] Role {
+            get {
+                return this.roleField;
+            }
+            set {
+                this.roleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("CustomField")]
+        public CustomField[] CustomField {
+            get {
+                return this.customFieldField;
+            }
+            set {
+                this.customFieldField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public enum roleType {
+        
+        /// <remarks/>
+        Customer,
+        
+        /// <remarks/>
+        Vendor,
+        
+        /// <remarks/>
+        Employee,
+        
+        /// <remarks/>
+        NonEmployee,
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(QboCompany))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Organization : CdmBase {
+        
+        private string orgIdField;
+        
+        private string legalNameField;
+        
+        private string dBANameField;
+        
+        private string industryField;
+        
+        private bool nonProfitField;
+        
+        private string legalStructureField;
+        
+        private string categoryField;
+        
+        private string taxIdField;
+        
+        private PhysicalAddress[] addressField;
+        
+        private TelephoneNumber[] phoneField;
+        
+        private WebSiteAddress[] webSiteField;
+        
+        private EmailAddress[] emailField;
+        
+        private roleType[] roleField;
+        
+        public Organization() {
+            this.nonProfitField = false;
+        }
+        
+        /// <remarks/>
+        public string OrgId {
+            get {
+                return this.orgIdField;
+            }
+            set {
+                this.orgIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string LegalName {
+            get {
+                return this.legalNameField;
+            }
+            set {
+                this.legalNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string DBAName {
+            get {
+                return this.dBANameField;
+            }
+            set {
+                this.dBANameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Industry {
+            get {
+                return this.industryField;
+            }
+            set {
+                this.industryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.ComponentModel.DefaultValueAttribute(false)]
+        public bool NonProfit {
+            get {
+                return this.nonProfitField;
+            }
+            set {
+                this.nonProfitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string LegalStructure {
+            get {
+                return this.legalStructureField;
+            }
+            set {
+                this.legalStructureField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Category {
+            get {
+                return this.categoryField;
+            }
+            set {
+                this.categoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TaxId {
+            get {
+                return this.taxIdField;
+            }
+            set {
+                this.taxIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Address")]
+        public PhysicalAddress[] Address {
+            get {
+                return this.addressField;
+            }
+            set {
+                this.addressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Phone")]
+        public TelephoneNumber[] Phone {
+            get {
+                return this.phoneField;
+            }
+            set {
+                this.phoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("WebSite")]
+        public WebSiteAddress[] WebSite {
+            get {
+                return this.webSiteField;
+            }
+            set {
+                this.webSiteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Email")]
+        public EmailAddress[] Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Role")]
+        public roleType[] Role {
+            get {
+                return this.roleField;
+            }
+            set {
+                this.roleField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo", IsNullable=false)]
+    public partial class QboCompany : Organization {
+        
+        private bool useDefaultChartOfAccountsField;
+        
+        private bool useDefaultChartOfAccountsFieldSpecified;
+        
+        private string billingCodeField;
+        
+        private string userNameField;
+        
+        private string userAuthIdField;
+        
+        /// <remarks/>
+        public bool UseDefaultChartOfAccounts {
+            get {
+                return this.useDefaultChartOfAccountsField;
+            }
+            set {
+                this.useDefaultChartOfAccountsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool UseDefaultChartOfAccountsSpecified {
+            get {
+                return this.useDefaultChartOfAccountsFieldSpecified;
+            }
+            set {
+                this.useDefaultChartOfAccountsFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BillingCode {
+            get {
+                return this.billingCodeField;
+            }
+            set {
+                this.billingCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string UserName {
+            get {
+                return this.userNameField;
+            }
+            set {
+                this.userNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string UserAuthId {
+            get {
+                return this.userAuthIdField;
+            }
+            set {
+                this.userAuthIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Person : CdmBase {
+        
+        private string titleField;
+        
+        private string givenNameField;
+        
+        private string middleNameField;
+        
+        private string familyNameField;
+        
+        private string suffixField;
+        
+        private gender genderField;
+        
+        private bool genderFieldSpecified;
+        
+        private System.DateTime birthDateField;
+        
+        private bool birthDateFieldSpecified;
+        
+        private string userIdField;
+        
+        private string taxIdField;
+        
+        private PhysicalAddress[] addressField;
+        
+        private TelephoneNumber[] phoneField;
+        
+        private WebSiteAddress[] webSiteField;
+        
+        private EmailAddress[] emailField;
+        
+        private roleType[] roleField;
+        
+        /// <remarks/>
+        public string Title {
+            get {
+                return this.titleField;
+            }
+            set {
+                this.titleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GivenName {
+            get {
+                return this.givenNameField;
+            }
+            set {
+                this.givenNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string MiddleName {
+            get {
+                return this.middleNameField;
+            }
+            set {
+                this.middleNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string FamilyName {
+            get {
+                return this.familyNameField;
+            }
+            set {
+                this.familyNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Suffix {
+            get {
+                return this.suffixField;
+            }
+            set {
+                this.suffixField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public gender Gender {
+            get {
+                return this.genderField;
+            }
+            set {
+                this.genderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool GenderSpecified {
+            get {
+                return this.genderFieldSpecified;
+            }
+            set {
+                this.genderFieldSpecified = value;
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
-        public System.DateTime OpeningBalanceDate {
+        public System.DateTime BirthDate {
             get {
-                return this.openingBalanceDateField;
+                return this.birthDateField;
             }
             set {
-                this.openingBalanceDateField = value;
+                this.birthDateField = value;
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool OpeningBalanceDateSpecified {
+        public bool BirthDateSpecified {
             get {
-                return this.openingBalanceDateFieldSpecified;
+                return this.birthDateFieldSpecified;
             }
             set {
-                this.openingBalanceDateFieldSpecified = value;
+                this.birthDateFieldSpecified = value;
             }
         }
         
         /// <remarks/>
-        public decimal CurrentBalance {
+        public string UserId {
             get {
-                return this.currentBalanceField;
+                return this.userIdField;
             }
             set {
-                this.currentBalanceField = value;
+                this.userIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string TaxId {
+            get {
+                return this.taxIdField;
+            }
+            set {
+                this.taxIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Address")]
+        public PhysicalAddress[] Address {
+            get {
+                return this.addressField;
+            }
+            set {
+                this.addressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Phone")]
+        public TelephoneNumber[] Phone {
+            get {
+                return this.phoneField;
+            }
+            set {
+                this.phoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("WebSite")]
+        public WebSiteAddress[] WebSite {
+            get {
+                return this.webSiteField;
+            }
+            set {
+                this.webSiteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Email")]
+        public EmailAddress[] Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Role")]
+        public roleType[] Role {
+            get {
+                return this.roleField;
+            }
+            set {
+                this.roleField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CompanyPreferences))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CdmCollections))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Vendors))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(VendorCreditsToApply))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(VendorCredits))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UOMs))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TxnGenerics))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TimeActivities))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ShipMethods))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesTerms))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesTaxPaymentChecks))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesTaxGroups))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesTaxCodes))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesTaxes))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesReps))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesReceipts))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesOrders))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PurchaseOrders))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Payments))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PaymentMethods))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(JournalEntries))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Jobs))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Items))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ItemReceipts))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Invoices))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InventoryAdjustments))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Estimates))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Employees))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Discounts))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Customers))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreditMemos))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreditCardCredits))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreditCardCharges))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CashPurchases))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Classes))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Checks))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Charges))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BillPayments))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Bills))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Accounts))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CompaniesMetaData))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public abstract partial class CdmComplexBase {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class CompanyPreferences : CdmComplexBase {
+        
+        private Preferences preferencesField;
+        
+        /// <remarks/>
+        public Preferences Preferences {
+            get {
+                return this.preferencesField;
+            }
+            set {
+                this.preferencesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Vendors))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(VendorCreditsToApply))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(VendorCredits))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UOMs))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TxnGenerics))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TimeActivities))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ShipMethods))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesTerms))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesTaxPaymentChecks))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesTaxGroups))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesTaxCodes))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesTaxes))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesReps))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesReceipts))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(SalesOrders))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PurchaseOrders))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Payments))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PaymentMethods))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(JournalEntries))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Jobs))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Items))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ItemReceipts))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Invoices))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InventoryAdjustments))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Estimates))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Employees))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Discounts))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Customers))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreditMemos))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreditCardCredits))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreditCardCharges))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CashPurchases))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Classes))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Checks))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Charges))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BillPayments))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Bills))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Accounts))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CompaniesMetaData))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public abstract partial class CdmCollections : CdmComplexBase {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Vendors : CdmCollections {
+        
+        private Vendor[] vendorField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Vendor")]
+        public Vendor[] Vendor {
+            get {
+                return this.vendorField;
+            }
+            set {
+                this.vendorField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class VendorCreditsToApply : CdmCollections {
+        
+        private VendorCreditToApply[] vendorCreditToApplyField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("VendorCreditToApply")]
+        public VendorCreditToApply[] VendorCreditToApply {
+            get {
+                return this.vendorCreditToApplyField;
+            }
+            set {
+                this.vendorCreditToApplyField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class VendorCredits : CdmCollections {
+        
+        private VendorCredit[] vendorCreditField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("VendorCredit")]
+        public VendorCredit[] VendorCredit {
+            get {
+                return this.vendorCreditField;
+            }
+            set {
+                this.vendorCreditField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class UOMs : CdmCollections {
+        
+        private UOM[] uOMField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("UOM")]
+        public UOM[] UOM {
+            get {
+                return this.uOMField;
+            }
+            set {
+                this.uOMField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class TxnGenerics : CdmCollections {
+        
+        private TxnGeneric[] txnGenericField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("TxnGeneric")]
+        public TxnGeneric[] TxnGeneric {
+            get {
+                return this.txnGenericField;
+            }
+            set {
+                this.txnGenericField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class TimeActivities : CdmCollections {
+        
+        private TimeActivity[] timeActivityField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("TimeActivity")]
+        public TimeActivity[] TimeActivity {
+            get {
+                return this.timeActivityField;
+            }
+            set {
+                this.timeActivityField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class ShipMethods : CdmCollections {
+        
+        private ShipMethod[] shipMethodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ShipMethod")]
+        public ShipMethod[] ShipMethod {
+            get {
+                return this.shipMethodField;
+            }
+            set {
+                this.shipMethodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class SalesTerms : CdmCollections {
+        
+        private SalesTerm[] salesTermField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SalesTerm")]
+        public SalesTerm[] SalesTerm {
+            get {
+                return this.salesTermField;
+            }
+            set {
+                this.salesTermField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class SalesTaxPaymentChecks : CdmCollections {
+        
+        private SalesTaxPaymentCheck[] salesTaxPaymentCheckField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SalesTaxPaymentCheck")]
+        public SalesTaxPaymentCheck[] SalesTaxPaymentCheck {
+            get {
+                return this.salesTaxPaymentCheckField;
+            }
+            set {
+                this.salesTaxPaymentCheckField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class SalesTaxGroups : CdmCollections {
+        
+        private SalesTaxGroup[] salesTaxGroupField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SalesTaxGroup")]
+        public SalesTaxGroup[] SalesTaxGroup {
+            get {
+                return this.salesTaxGroupField;
+            }
+            set {
+                this.salesTaxGroupField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class SalesTaxCodes : CdmCollections {
+        
+        private SalesTaxCode[] salesTaxCodeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SalesTaxCode")]
+        public SalesTaxCode[] SalesTaxCode {
+            get {
+                return this.salesTaxCodeField;
+            }
+            set {
+                this.salesTaxCodeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class SalesTaxes : CdmCollections {
+        
+        private SalesTax[] salesTaxField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SalesTax")]
+        public SalesTax[] SalesTax {
+            get {
+                return this.salesTaxField;
+            }
+            set {
+                this.salesTaxField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class SalesReps : CdmCollections {
+        
+        private SalesRep[] salesRepField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SalesRep")]
+        public SalesRep[] SalesRep {
+            get {
+                return this.salesRepField;
+            }
+            set {
+                this.salesRepField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class SalesReceipts : CdmCollections {
+        
+        private SalesReceipt[] salesReceiptField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SalesReceipt")]
+        public SalesReceipt[] SalesReceipt {
+            get {
+                return this.salesReceiptField;
+            }
+            set {
+                this.salesReceiptField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class SalesOrders : CdmCollections {
+        
+        private SalesOrder[] salesOrderField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SalesOrder")]
+        public SalesOrder[] SalesOrder {
+            get {
+                return this.salesOrderField;
+            }
+            set {
+                this.salesOrderField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class PurchaseOrders : CdmCollections {
+        
+        private PurchaseOrder[] purchaseOrderField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("PurchaseOrder")]
+        public PurchaseOrder[] PurchaseOrder {
+            get {
+                return this.purchaseOrderField;
+            }
+            set {
+                this.purchaseOrderField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Payments : CdmCollections {
+        
+        private Payment[] paymentField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Payment")]
+        public Payment[] Payment {
+            get {
+                return this.paymentField;
+            }
+            set {
+                this.paymentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class PaymentMethods : CdmCollections {
+        
+        private PaymentMethod[] paymentMethodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("PaymentMethod")]
+        public PaymentMethod[] PaymentMethod {
+            get {
+                return this.paymentMethodField;
+            }
+            set {
+                this.paymentMethodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class JournalEntries : CdmCollections {
+        
+        private JournalEntry[] journalEntryField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("JournalEntry")]
+        public JournalEntry[] JournalEntry {
+            get {
+                return this.journalEntryField;
+            }
+            set {
+                this.journalEntryField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Jobs : CdmCollections {
+        
+        private Job[] jobField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Job")]
+        public Job[] Job {
+            get {
+                return this.jobField;
+            }
+            set {
+                this.jobField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Items : CdmCollections {
+        
+        private Item[] itemField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Item")]
+        public Item[] Item {
+            get {
+                return this.itemField;
+            }
+            set {
+                this.itemField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class ItemReceipts : CdmCollections {
+        
+        private ItemReceipt[] itemReceiptField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ItemReceipt")]
+        public ItemReceipt[] ItemReceipt {
+            get {
+                return this.itemReceiptField;
+            }
+            set {
+                this.itemReceiptField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Invoices : CdmCollections {
+        
+        private Invoice[] invoiceField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Invoice")]
+        public Invoice[] Invoice {
+            get {
+                return this.invoiceField;
+            }
+            set {
+                this.invoiceField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class InventoryAdjustments : CdmCollections {
+        
+        private InventoryAdjustment[] inventoryAdjustmentField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("InventoryAdjustment")]
+        public InventoryAdjustment[] InventoryAdjustment {
+            get {
+                return this.inventoryAdjustmentField;
+            }
+            set {
+                this.inventoryAdjustmentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Estimates : CdmCollections {
+        
+        private Estimate[] estimateField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Estimate")]
+        public Estimate[] Estimate {
+            get {
+                return this.estimateField;
+            }
+            set {
+                this.estimateField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Employees : CdmCollections {
+        
+        private Employee[] employeeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Employee")]
+        public Employee[] Employee {
+            get {
+                return this.employeeField;
+            }
+            set {
+                this.employeeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Discounts : CdmCollections {
+        
+        private Discount[] discountField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Discount")]
+        public Discount[] Discount {
+            get {
+                return this.discountField;
+            }
+            set {
+                this.discountField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Customers : CdmCollections {
+        
+        private Customer[] customerField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Customer")]
+        public Customer[] Customer {
+            get {
+                return this.customerField;
+            }
+            set {
+                this.customerField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class CreditMemos : CdmCollections {
+        
+        private CreditMemo[] creditMemoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("CreditMemo")]
+        public CreditMemo[] CreditMemo {
+            get {
+                return this.creditMemoField;
+            }
+            set {
+                this.creditMemoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class CreditCardCredits : CdmCollections {
+        
+        private CreditCardCredit[] creditCardCreditField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("CreditCardCredit")]
+        public CreditCardCredit[] CreditCardCredit {
+            get {
+                return this.creditCardCreditField;
+            }
+            set {
+                this.creditCardCreditField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class CreditCardCharges : CdmCollections {
+        
+        private CreditCardCharge[] creditCardChargeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("CreditCardCharge")]
+        public CreditCardCharge[] CreditCardCharge {
+            get {
+                return this.creditCardChargeField;
+            }
+            set {
+                this.creditCardChargeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class CashPurchases : CdmCollections {
+        
+        private CashPurchase[] cashPurchaseField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("CashPurchase")]
+        public CashPurchase[] CashPurchase {
+            get {
+                return this.cashPurchaseField;
+            }
+            set {
+                this.cashPurchaseField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Classes : CdmCollections {
+        
+        private Class[] classField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Class")]
+        public Class[] Class {
+            get {
+                return this.classField;
+            }
+            set {
+                this.classField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Checks : CdmCollections {
+        
+        private Check[] checkField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Check")]
+        public Check[] Check {
+            get {
+                return this.checkField;
+            }
+            set {
+                this.checkField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Charges : CdmCollections {
+        
+        private Charge[] chargeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Charge")]
+        public Charge[] Charge {
+            get {
+                return this.chargeField;
+            }
+            set {
+                this.chargeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class BillPayments : CdmCollections {
+        
+        private BillPayment[] billPaymentField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("BillPayment")]
+        public BillPayment[] BillPayment {
+            get {
+                return this.billPaymentField;
+            }
+            set {
+                this.billPaymentField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Bills : CdmCollections {
+        
+        private Bill[] billField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Bill")]
+        public Bill[] Bill {
+            get {
+                return this.billField;
+            }
+            set {
+                this.billField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public partial class Accounts : CdmCollections {
+        
+        private Account[] accountField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Account")]
+        public Account[] Account {
+            get {
+                return this.accountField;
+            }
+            set {
+                this.accountField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    public enum TaxFormEnum {
+        
+        /// <remarks/>
+        Form1040,
+        
+        /// <remarks/>
+        Form1065,
+        
+        /// <remarks/>
+        Form1120,
+        
+        /// <remarks/>
+        Form1120S,
+        
+        /// <remarks/>
+        Form990,
+        
+        /// <remarks/>
+        Form990PF,
+        
+        /// <remarks/>
+        Form990T,
+        
+        /// <remarks/>
+        OtherOrNone,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo", IsNullable=false)]
+    public partial class QboBulkResult {
+        
+        private IdType idField;
+        
+        private string syncTokenField;
+        
+        private bool successField;
+        
+        private bool successFieldSpecified;
+        
+        private string errorClassField;
+        
+        private string errorCodeField;
+        
+        private string errorCauseField;
+        
+        private string messageField;
+        
+        /// <remarks/>
+        public IdType Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SyncToken {
+            get {
+                return this.syncTokenField;
+            }
+            set {
+                this.syncTokenField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Success {
+            get {
+                return this.successField;
+            }
+            set {
+                this.successField = value;
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool CurrentBalanceSpecified {
+        public bool SuccessSpecified {
             get {
-                return this.currentBalanceFieldSpecified;
+                return this.successFieldSpecified;
             }
             set {
-                this.currentBalanceFieldSpecified = value;
+                this.successFieldSpecified = value;
             }
         }
         
         /// <remarks/>
-        public decimal CurrentBalanceWithSubAccounts {
+        public string ErrorClass {
             get {
-                return this.currentBalanceWithSubAccountsField;
+                return this.errorClassField;
             }
             set {
-                this.currentBalanceWithSubAccountsField = value;
+                this.errorClassField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorCode {
+            get {
+                return this.errorCodeField;
+            }
+            set {
+                this.errorCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorCause {
+            get {
+                return this.errorCauseField;
+            }
+            set {
+                this.errorCauseField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Message {
+            get {
+                return this.messageField;
+            }
+            set {
+                this.messageField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo", IsNullable=false)]
+    public partial class QboCompanyReport {
+        
+        private QboCompany companyInfoField;
+        
+        private Person personInfoField;
+        
+        private bool trialField;
+        
+        private bool trialFieldSpecified;
+        
+        private bool subscriptionField;
+        
+        private bool subscriptionFieldSpecified;
+        
+        private string sKUField;
+        
+        private string z0NCodeField;
+        
+        private long noOfLoginsField;
+        
+        private bool noOfLoginsFieldSpecified;
+        
+        private long noOfCustomersField;
+        
+        private bool noOfCustomersFieldSpecified;
+        
+        private long maxCustomersField;
+        
+        private bool maxCustomersFieldSpecified;
+        
+        private System.DateTime creationDateField;
+        
+        private bool creationDateFieldSpecified;
+        
+        private System.DateTime subscriptionDateField;
+        
+        private bool subscriptionDateFieldSpecified;
+        
+        private bool payrollTrialField;
+        
+        private bool payrollTrialFieldSpecified;
+        
+        private bool payrollSubscriptionField;
+        
+        private bool payrollSubscriptionFieldSpecified;
+        
+        private bool mASUserField;
+        
+        private bool mASUserFieldSpecified;
+        
+        /// <remarks/>
+        public QboCompany CompanyInfo {
+            get {
+                return this.companyInfoField;
+            }
+            set {
+                this.companyInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Person PersonInfo {
+            get {
+                return this.personInfoField;
+            }
+            set {
+                this.personInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Trial {
+            get {
+                return this.trialField;
+            }
+            set {
+                this.trialField = value;
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool CurrentBalanceWithSubAccountsSpecified {
+        public bool TrialSpecified {
             get {
-                return this.currentBalanceWithSubAccountsFieldSpecified;
+                return this.trialFieldSpecified;
             }
             set {
-                this.currentBalanceWithSubAccountsFieldSpecified = value;
+                this.trialFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Subscription {
+            get {
+                return this.subscriptionField;
+            }
+            set {
+                this.subscriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SubscriptionSpecified {
+            get {
+                return this.subscriptionFieldSpecified;
+            }
+            set {
+                this.subscriptionFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SKU {
+            get {
+                return this.sKUField;
+            }
+            set {
+                this.sKUField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Z0NCode {
+            get {
+                return this.z0NCodeField;
+            }
+            set {
+                this.z0NCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long NoOfLogins {
+            get {
+                return this.noOfLoginsField;
+            }
+            set {
+                this.noOfLoginsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NoOfLoginsSpecified {
+            get {
+                return this.noOfLoginsFieldSpecified;
+            }
+            set {
+                this.noOfLoginsFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long NoOfCustomers {
+            get {
+                return this.noOfCustomersField;
+            }
+            set {
+                this.noOfCustomersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NoOfCustomersSpecified {
+            get {
+                return this.noOfCustomersFieldSpecified;
+            }
+            set {
+                this.noOfCustomersFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long MaxCustomers {
+            get {
+                return this.maxCustomersField;
+            }
+            set {
+                this.maxCustomersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaxCustomersSpecified {
+            get {
+                return this.maxCustomersFieldSpecified;
+            }
+            set {
+                this.maxCustomersFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
+        public System.DateTime CreationDate {
+            get {
+                return this.creationDateField;
+            }
+            set {
+                this.creationDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CreationDateSpecified {
+            get {
+                return this.creationDateFieldSpecified;
+            }
+            set {
+                this.creationDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
+        public System.DateTime SubscriptionDate {
+            get {
+                return this.subscriptionDateField;
+            }
+            set {
+                this.subscriptionDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SubscriptionDateSpecified {
+            get {
+                return this.subscriptionDateFieldSpecified;
+            }
+            set {
+                this.subscriptionDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool PayrollTrial {
+            get {
+                return this.payrollTrialField;
+            }
+            set {
+                this.payrollTrialField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PayrollTrialSpecified {
+            get {
+                return this.payrollTrialFieldSpecified;
+            }
+            set {
+                this.payrollTrialFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool PayrollSubscription {
+            get {
+                return this.payrollSubscriptionField;
+            }
+            set {
+                this.payrollSubscriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PayrollSubscriptionSpecified {
+            get {
+                return this.payrollSubscriptionFieldSpecified;
+            }
+            set {
+                this.payrollSubscriptionFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool MASUser {
+            get {
+                return this.mASUserField;
+            }
+            set {
+                this.mASUserField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MASUserSpecified {
+            get {
+                return this.mASUserFieldSpecified;
+            }
+            set {
+                this.mASUserFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo", IsNullable=false)]
+    public partial class QboUser {
+        
+        private string loginNameField;
+        
+        private string passwordField;
+        
+        private string ticketField;
+        
+        private string agentIdField;
+        
+        private QboUserCompanyMapping currentCompanyField;
+        
+        private QboUserCompanyMapping[] userCompanyMapField;
+        
+        /// <remarks/>
+        public string LoginName {
+            get {
+                return this.loginNameField;
+            }
+            set {
+                this.loginNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Password {
+            get {
+                return this.passwordField;
+            }
+            set {
+                this.passwordField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Ticket {
+            get {
+                return this.ticketField;
+            }
+            set {
+                this.ticketField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AgentId {
+            get {
+                return this.agentIdField;
+            }
+            set {
+                this.agentIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public QboUserCompanyMapping CurrentCompany {
+            get {
+                return this.currentCompanyField;
+            }
+            set {
+                this.currentCompanyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("UserCompanyMap")]
+        public QboUserCompanyMapping[] UserCompanyMap {
+            get {
+                return this.userCompanyMapField;
+            }
+            set {
+                this.userCompanyMapField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo", IsNullable=false)]
+    public partial class QboUserCompanyMapping {
+        
+        private string companyIdField;
+        
+        private string clusterIdField;
+        
+        private string companyNameField;
+        
+        private string baseURIField;
+        
+        /// <remarks/>
+        public string CompanyId {
+            get {
+                return this.companyIdField;
+            }
+            set {
+                this.companyIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ClusterId {
+            get {
+                return this.clusterIdField;
+            }
+            set {
+                this.clusterIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CompanyName {
+            get {
+                return this.companyNameField;
+            }
+            set {
+                this.companyNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BaseURI {
+            get {
+                return this.baseURIField;
+            }
+            set {
+                this.baseURIField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/qbo", IsNullable=false)]
+    public partial class SearchResults {
+        
+        private CdmCollections cdmCollectionsField;
+        
+        private int countField;
+        
+        private bool countFieldSpecified;
+        
+        private int currentPageField;
+        
+        private bool currentPageFieldSpecified;
+        
+        /// <remarks/>
+        public CdmCollections CdmCollections {
+            get {
+                return this.cdmCollectionsField;
+            }
+            set {
+                this.cdmCollectionsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Count {
+            get {
+                return this.countField;
+            }
+            set {
+                this.countField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CountSpecified {
+            get {
+                return this.countFieldSpecified;
+            }
+            set {
+                this.countFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CurrentPage {
+            get {
+                return this.currentPageField;
+            }
+            set {
+                this.currentPageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CurrentPageSpecified {
+            get {
+                return this.currentPageFieldSpecified;
+            }
+            set {
+                this.currentPageFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://platform.intuit.com/api/v1")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://platform.intuit.com/api/v1", IsNullable=false)]
+    public partial class UserResponse {
+        
+        private string errorCodeField;
+        
+        private System.DateTime serverTimeField;
+        
+        private bool serverTimeFieldSpecified;
+        
+        private User userField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
+        public string ErrorCode {
+            get {
+                return this.errorCodeField;
+            }
+            set {
+                this.errorCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime ServerTime {
+            get {
+                return this.serverTimeField;
+            }
+            set {
+                this.serverTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ServerTimeSpecified {
+            get {
+                return this.serverTimeFieldSpecified;
+            }
+            set {
+                this.serverTimeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public User User {
+            get {
+                return this.userField;
+            }
+            set {
+                this.userField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://platform.intuit.com/api/v1")]
+    public partial class User {
+        
+        private string firstNameField;
+        
+        private string lastNameField;
+        
+        private string emailAddressField;
+        
+        private string screenNameField;
+        
+        private bool isVerifiedField;
+        
+        /// <remarks/>
+        public string FirstName {
+            get {
+                return this.firstNameField;
+            }
+            set {
+                this.firstNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string LastName {
+            get {
+                return this.lastNameField;
+            }
+            set {
+                this.lastNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string EmailAddress {
+            get {
+                return this.emailAddressField;
+            }
+            set {
+                this.emailAddressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ScreenName {
+            get {
+                return this.screenNameField;
+            }
+            set {
+                this.screenNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsVerified {
+            get {
+                return this.isVerifiedField;
+            }
+            set {
+                this.isVerifiedField = value;
             }
         }
     }
@@ -11909,30 +16715,18 @@ namespace Intuit.Sb.Cdm.V2 {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Bill : CdmBase {
+    public partial class CustomFieldDefinitions {
         
-        private BillHeader headerField;
-        
-        private BillLine[] lineField;
+        private CustomFieldDefinition[] customFieldDefinitionField;
         
         /// <remarks/>
-        public BillHeader Header {
+        [System.Xml.Serialization.XmlElementAttribute("CustomFieldDefinition")]
+        public CustomFieldDefinition[] CustomFieldDefinition {
             get {
-                return this.headerField;
+                return this.customFieldDefinitionField;
             }
             set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public BillLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
+                this.customFieldDefinitionField = value;
             }
         }
     }
@@ -11944,30 +16738,41 @@ namespace Intuit.Sb.Cdm.V2 {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class BillPayment : CdmBase {
+    public partial class Persons {
         
-        private BillPaymentHeader headerField;
-        
-        private BillPaymentLine[] lineField;
+        private Person[] personField;
         
         /// <remarks/>
-        public BillPaymentHeader Header {
+        [System.Xml.Serialization.XmlElementAttribute("Person")]
+        public Person[] Person {
             get {
-                return this.headerField;
+                return this.personField;
             }
             set {
-                this.headerField = value;
+                this.personField = value;
             }
         }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
+    public partial class Organizations {
+        
+        private Organization[] organizationField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public BillPaymentLine[] Line {
+        [System.Xml.Serialization.XmlElementAttribute("Organization")]
+        public Organization[] Organization {
             get {
-                return this.lineField;
+                return this.organizationField;
             }
             set {
-                this.lineField = value;
+                this.organizationField = value;
             }
         }
     }
@@ -12111,552 +16916,6 @@ namespace Intuit.Sb.Cdm.V2 {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class CashPurchase : CdmBase {
-        
-        private CashPurchaseHeader headerField;
-        
-        private CashPurchaseLine[] lineField;
-        
-        /// <remarks/>
-        public CashPurchaseHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public CashPurchaseLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Charge : CdmBase {
-        
-        private ChargeHeader headerField;
-        
-        private ChargeLine lineField;
-        
-        /// <remarks/>
-        public ChargeHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ChargeLine Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Check : CdmBase {
-        
-        private CheckHeader headerField;
-        
-        private CheckLine[] lineField;
-        
-        /// <remarks/>
-        public CheckHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public CheckLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Class : CdmBase {
-        
-        private string nameField;
-        
-        private IdType classParentIdField;
-        
-        private string classParentNameField;
-        
-        private bool activeField;
-        
-        private bool activeFieldSpecified;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType ClassParentId {
-            get {
-                return this.classParentIdField;
-            }
-            set {
-                this.classParentIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ClassParentName {
-            get {
-                return this.classParentNameField;
-            }
-            set {
-                this.classParentNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Active {
-            get {
-                return this.activeField;
-            }
-            set {
-                this.activeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ActiveSpecified {
-            get {
-                return this.activeFieldSpecified;
-            }
-            set {
-                this.activeFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class CreditMemo : CdmBase {
-        
-        private CreditMemoHeader headerField;
-        
-        private CreditMemoLine[] lineField;
-        
-        private TaxLine[] taxLineField;
-        
-        /// <remarks/>
-        public CreditMemoHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public CreditMemoLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TaxLine")]
-        public TaxLine[] TaxLine {
-            get {
-                return this.taxLineField;
-            }
-            set {
-                this.taxLineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class CreditCardCharge : CdmBase {
-        
-        private CreditCardChargeHeader headerField;
-        
-        private CreditCardChargeLine[] lineField;
-        
-        /// <remarks/>
-        public CreditCardChargeHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public CreditCardChargeLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class CreditCardCredit : CdmBase {
-        
-        private CreditCardCreditHeader headerField;
-        
-        private CreditCardCreditLine[] lineField;
-        
-        /// <remarks/>
-        public CreditCardCreditHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public CreditCardCreditLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Discount : CdmBase {
-        
-        private string nameField;
-        
-        private string descField;
-        
-        private bool taxableField;
-        
-        private bool taxableFieldSpecified;
-        
-        private bool activeField;
-        
-        private bool activeFieldSpecified;
-        
-        private object itemField;
-        
-        private IdType discountAccountIdField;
-        
-        private string discountAccountNameField;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Desc {
-            get {
-                return this.descField;
-            }
-            set {
-                this.descField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Taxable {
-            get {
-                return this.taxableField;
-            }
-            set {
-                this.taxableField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TaxableSpecified {
-            get {
-                return this.taxableFieldSpecified;
-            }
-            set {
-                this.taxableFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Active {
-            get {
-                return this.activeField;
-            }
-            set {
-                this.activeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ActiveSpecified {
-            get {
-                return this.activeFieldSpecified;
-            }
-            set {
-                this.activeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Amount", typeof(Money))]
-        [System.Xml.Serialization.XmlElementAttribute("Percent", typeof(decimal))]
-        public object Item {
-            get {
-                return this.itemField;
-            }
-            set {
-                this.itemField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType DiscountAccountId {
-            get {
-                return this.discountAccountIdField;
-            }
-            set {
-                this.discountAccountIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string DiscountAccountName {
-            get {
-                return this.discountAccountNameField;
-            }
-            set {
-                this.discountAccountNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Estimate : CdmBase {
-        
-        private EstimateHeader headerField;
-        
-        private EstimateLine[] lineField;
-        
-        private TaxLine[] taxLineField;
-        
-        /// <remarks/>
-        public EstimateHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public EstimateLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TaxLine")]
-        public TaxLine[] TaxLine {
-            get {
-                return this.taxLineField;
-            }
-            set {
-                this.taxLineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class InventoryAdjustment : CdmBase {
-        
-        private InventoryAdjustmentHeader headerField;
-        
-        private InventoryAdjustmentLine[] lineField;
-        
-        /// <remarks/>
-        public InventoryAdjustmentHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public InventoryAdjustmentLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Invoice : CdmBase {
-        
-        private InvoiceHeader headerField;
-        
-        private InvoiceLine[] lineField;
-        
-        private TaxLine[] taxLineField;
-        
-        /// <remarks/>
-        public InvoiceHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public InvoiceLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TaxLine")]
-        public TaxLine[] TaxLine {
-            get {
-                return this.taxLineField;
-            }
-            set {
-                this.taxLineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
     public partial class ItemGroupComponent {
         
         private IdType itemParentIdField;
@@ -12778,2506 +17037,6 @@ namespace Intuit.Sb.Cdm.V2 {
             }
             set {
                 this.uOMAbbrvField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Item : CdmBase {
-        
-        private IdType itemParentIdField;
-        
-        private string itemParentNameField;
-        
-        private string nameField;
-        
-        private string descField;
-        
-        private bool taxableField;
-        
-        private bool taxableFieldSpecified;
-        
-        private bool activeField;
-        
-        private bool activeFieldSpecified;
-        
-        private Money unitPriceField;
-        
-        private ItemTypeEnum typeField;
-        
-        private bool typeFieldSpecified;
-        
-        private IdType uOMIdField;
-        
-        private string uOMAbbrvField;
-        
-        private AccountRef incomeAccountRefField;
-        
-        private string purchaseDescField;
-        
-        private Money purchaseCostField;
-        
-        private AccountRef expenseAccountRefField;
-        
-        private AccountRef cOGSAccountRefField;
-        
-        private AccountRef assetAccountRefField;
-        
-        private VendorRef prefVendorRefField;
-        
-        private Money avgCostField;
-        
-        private decimal qtyOnHandField;
-        
-        private bool qtyOnHandFieldSpecified;
-        
-        private decimal qtyOnPurchaseOrderField;
-        
-        private bool qtyOnPurchaseOrderFieldSpecified;
-        
-        private decimal qtyOnSalesOrderField;
-        
-        private bool qtyOnSalesOrderFieldSpecified;
-        
-        private decimal reorderPointField;
-        
-        private bool reorderPointFieldSpecified;
-        
-        private string manPartNumField;
-        
-        /// <remarks/>
-        public IdType ItemParentId {
-            get {
-                return this.itemParentIdField;
-            }
-            set {
-                this.itemParentIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ItemParentName {
-            get {
-                return this.itemParentNameField;
-            }
-            set {
-                this.itemParentNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Desc {
-            get {
-                return this.descField;
-            }
-            set {
-                this.descField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Taxable {
-            get {
-                return this.taxableField;
-            }
-            set {
-                this.taxableField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TaxableSpecified {
-            get {
-                return this.taxableFieldSpecified;
-            }
-            set {
-                this.taxableFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Active {
-            get {
-                return this.activeField;
-            }
-            set {
-                this.activeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ActiveSpecified {
-            get {
-                return this.activeFieldSpecified;
-            }
-            set {
-                this.activeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Money UnitPrice {
-            get {
-                return this.unitPriceField;
-            }
-            set {
-                this.unitPriceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ItemTypeEnum Type {
-            get {
-                return this.typeField;
-            }
-            set {
-                this.typeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TypeSpecified {
-            get {
-                return this.typeFieldSpecified;
-            }
-            set {
-                this.typeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType UOMId {
-            get {
-                return this.uOMIdField;
-            }
-            set {
-                this.uOMIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string UOMAbbrv {
-            get {
-                return this.uOMAbbrvField;
-            }
-            set {
-                this.uOMAbbrvField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public AccountRef IncomeAccountRef {
-            get {
-                return this.incomeAccountRefField;
-            }
-            set {
-                this.incomeAccountRefField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PurchaseDesc {
-            get {
-                return this.purchaseDescField;
-            }
-            set {
-                this.purchaseDescField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Money PurchaseCost {
-            get {
-                return this.purchaseCostField;
-            }
-            set {
-                this.purchaseCostField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public AccountRef ExpenseAccountRef {
-            get {
-                return this.expenseAccountRefField;
-            }
-            set {
-                this.expenseAccountRefField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public AccountRef COGSAccountRef {
-            get {
-                return this.cOGSAccountRefField;
-            }
-            set {
-                this.cOGSAccountRefField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public AccountRef AssetAccountRef {
-            get {
-                return this.assetAccountRefField;
-            }
-            set {
-                this.assetAccountRefField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public VendorRef PrefVendorRef {
-            get {
-                return this.prefVendorRefField;
-            }
-            set {
-                this.prefVendorRefField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Money AvgCost {
-            get {
-                return this.avgCostField;
-            }
-            set {
-                this.avgCostField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal QtyOnHand {
-            get {
-                return this.qtyOnHandField;
-            }
-            set {
-                this.qtyOnHandField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool QtyOnHandSpecified {
-            get {
-                return this.qtyOnHandFieldSpecified;
-            }
-            set {
-                this.qtyOnHandFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal QtyOnPurchaseOrder {
-            get {
-                return this.qtyOnPurchaseOrderField;
-            }
-            set {
-                this.qtyOnPurchaseOrderField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool QtyOnPurchaseOrderSpecified {
-            get {
-                return this.qtyOnPurchaseOrderFieldSpecified;
-            }
-            set {
-                this.qtyOnPurchaseOrderFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal QtyOnSalesOrder {
-            get {
-                return this.qtyOnSalesOrderField;
-            }
-            set {
-                this.qtyOnSalesOrderField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool QtyOnSalesOrderSpecified {
-            get {
-                return this.qtyOnSalesOrderFieldSpecified;
-            }
-            set {
-                this.qtyOnSalesOrderFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal ReorderPoint {
-            get {
-                return this.reorderPointField;
-            }
-            set {
-                this.reorderPointField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ReorderPointSpecified {
-            get {
-                return this.reorderPointFieldSpecified;
-            }
-            set {
-                this.reorderPointFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ManPartNum {
-            get {
-                return this.manPartNumField;
-            }
-            set {
-                this.manPartNumField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class ItemReceipt : CdmBase {
-        
-        private ItemReceiptHeader headerField;
-        
-        private ItemReceiptLine[] lineField;
-        
-        /// <remarks/>
-        public ItemReceiptHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public ItemReceiptLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Job : Customer {
-        
-        private IdType customerIdField;
-        
-        private string customerNameField;
-        
-        private IdType jobParentIdField;
-        
-        private string jobParentNameField;
-        
-        /// <remarks/>
-        public IdType CustomerId {
-            get {
-                return this.customerIdField;
-            }
-            set {
-                this.customerIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CustomerName {
-            get {
-                return this.customerNameField;
-            }
-            set {
-                this.customerNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType JobParentId {
-            get {
-                return this.jobParentIdField;
-            }
-            set {
-                this.jobParentIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string JobParentName {
-            get {
-                return this.jobParentNameField;
-            }
-            set {
-                this.jobParentNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class JournalEntry : CdmBase {
-        
-        private JournalEntryHeader headerField;
-        
-        private JournalEntryLine[] lineField;
-        
-        /// <remarks/>
-        public JournalEntryHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public JournalEntryLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Payment : CdmBase {
-        
-        private PaymentHeader headerField;
-        
-        private PaymentLine[] lineField;
-        
-        /// <remarks/>
-        public PaymentHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public PaymentLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class PaymentMethod : CdmBase {
-        
-        private string nameField;
-        
-        private bool activeField;
-        
-        private bool activeFieldSpecified;
-        
-        private string typeField;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Active {
-            get {
-                return this.activeField;
-            }
-            set {
-                this.activeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ActiveSpecified {
-            get {
-                return this.activeFieldSpecified;
-            }
-            set {
-                this.activeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Type {
-            get {
-                return this.typeField;
-            }
-            set {
-                this.typeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class Preferences {
-        
-        private bool usingAccountNumbersField;
-        
-        private bool requiringAccountsField;
-        
-        private bool usingClassesField;
-        
-        private System.DateTime closingDateField;
-        
-        private bool closingDateFieldSpecified;
-        
-        private bool usingMultiCurrencyField;
-        
-        private currencyCode homeCurrencyField;
-        
-        private bool homeCurrencyFieldSpecified;
-        
-        private bool usingInventoryField;
-        
-        private string daysBillsAreDueField;
-        
-        private IdType discountAccountIdField;
-        
-        private string discountAccountNameField;
-        
-        private IdType shipMethodIdField;
-        
-        private string shipMethodNameField;
-        
-        private decimal defaultMarkupField;
-        
-        private bool trackReimbursableExpensesField;
-        
-        private bool autoApplyPaymentsField;
-        
-        private IdType taxIdField;
-        
-        private string taxNameField;
-        
-        private IdType taxGroupIdField;
-        
-        private string taxGroupNameField;
-        
-        private PaySalesTaxEnum paySalesTaxField;
-        
-        private bool paySalesTaxFieldSpecified;
-        
-        /// <remarks/>
-        public bool UsingAccountNumbers {
-            get {
-                return this.usingAccountNumbersField;
-            }
-            set {
-                this.usingAccountNumbersField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool RequiringAccounts {
-            get {
-                return this.requiringAccountsField;
-            }
-            set {
-                this.requiringAccountsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool UsingClasses {
-            get {
-                return this.usingClassesField;
-            }
-            set {
-                this.usingClassesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
-        public System.DateTime ClosingDate {
-            get {
-                return this.closingDateField;
-            }
-            set {
-                this.closingDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ClosingDateSpecified {
-            get {
-                return this.closingDateFieldSpecified;
-            }
-            set {
-                this.closingDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool UsingMultiCurrency {
-            get {
-                return this.usingMultiCurrencyField;
-            }
-            set {
-                this.usingMultiCurrencyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public currencyCode HomeCurrency {
-            get {
-                return this.homeCurrencyField;
-            }
-            set {
-                this.homeCurrencyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool HomeCurrencySpecified {
-            get {
-                return this.homeCurrencyFieldSpecified;
-            }
-            set {
-                this.homeCurrencyFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool UsingInventory {
-            get {
-                return this.usingInventoryField;
-            }
-            set {
-                this.usingInventoryField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="positiveInteger")]
-        public string DaysBillsAreDue {
-            get {
-                return this.daysBillsAreDueField;
-            }
-            set {
-                this.daysBillsAreDueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType DiscountAccountId {
-            get {
-                return this.discountAccountIdField;
-            }
-            set {
-                this.discountAccountIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string DiscountAccountName {
-            get {
-                return this.discountAccountNameField;
-            }
-            set {
-                this.discountAccountNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType ShipMethodId {
-            get {
-                return this.shipMethodIdField;
-            }
-            set {
-                this.shipMethodIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ShipMethodName {
-            get {
-                return this.shipMethodNameField;
-            }
-            set {
-                this.shipMethodNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal DefaultMarkup {
-            get {
-                return this.defaultMarkupField;
-            }
-            set {
-                this.defaultMarkupField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool TrackReimbursableExpenses {
-            get {
-                return this.trackReimbursableExpensesField;
-            }
-            set {
-                this.trackReimbursableExpensesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool AutoApplyPayments {
-            get {
-                return this.autoApplyPaymentsField;
-            }
-            set {
-                this.autoApplyPaymentsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType TaxId {
-            get {
-                return this.taxIdField;
-            }
-            set {
-                this.taxIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TaxName {
-            get {
-                return this.taxNameField;
-            }
-            set {
-                this.taxNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType TaxGroupId {
-            get {
-                return this.taxGroupIdField;
-            }
-            set {
-                this.taxGroupIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string TaxGroupName {
-            get {
-                return this.taxGroupNameField;
-            }
-            set {
-                this.taxGroupNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public PaySalesTaxEnum PaySalesTax {
-            get {
-                return this.paySalesTaxField;
-            }
-            set {
-                this.paySalesTaxField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool PaySalesTaxSpecified {
-            get {
-                return this.paySalesTaxFieldSpecified;
-            }
-            set {
-                this.paySalesTaxFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public enum PaySalesTaxEnum {
-        
-        /// <remarks/>
-        Annually,
-        
-        /// <remarks/>
-        Monthly,
-        
-        /// <remarks/>
-        Quarterly,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class PurchaseOrder : CdmBase {
-        
-        private PurchaseOrderHeader headerField;
-        
-        private PurchaseOrderLine[] lineField;
-        
-        /// <remarks/>
-        public PurchaseOrderHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public PurchaseOrderLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class SalesOrder : CdmBase {
-        
-        private SalesOrderHeader headerField;
-        
-        private SalesOrderLine[] lineField;
-        
-        private TaxLine[] taxLineField;
-        
-        /// <remarks/>
-        public SalesOrderHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public SalesOrderLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TaxLine")]
-        public TaxLine[] TaxLine {
-            get {
-                return this.taxLineField;
-            }
-            set {
-                this.taxLineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class SalesReceipt : CdmBase {
-        
-        private SalesReceiptHeader headerField;
-        
-        private SalesReceiptLine[] lineField;
-        
-        private TaxLine[] taxLineField;
-        
-        /// <remarks/>
-        public SalesReceiptHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public SalesReceiptLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TaxLine")]
-        public TaxLine[] TaxLine {
-            get {
-                return this.taxLineField;
-            }
-            set {
-                this.taxLineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class SalesRep : CdmBase {
-        
-        private SalesRepTypeEnum nameOfField;
-        
-        private bool nameOfFieldSpecified;
-        
-        private object itemField;
-        
-        private string initialsField;
-        
-        /// <remarks/>
-        public SalesRepTypeEnum NameOf {
-            get {
-                return this.nameOfField;
-            }
-            set {
-                this.nameOfField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool NameOfSpecified {
-            get {
-                return this.nameOfFieldSpecified;
-            }
-            set {
-                this.nameOfFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Employee", typeof(EmployeeRef))]
-        [System.Xml.Serialization.XmlElementAttribute("OtherName", typeof(OtherNameRef))]
-        [System.Xml.Serialization.XmlElementAttribute("Vendor", typeof(VendorRef))]
-        public object Item {
-            get {
-                return this.itemField;
-            }
-            set {
-                this.itemField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Initials {
-            get {
-                return this.initialsField;
-            }
-            set {
-                this.initialsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public enum SalesRepTypeEnum {
-        
-        /// <remarks/>
-        Employee,
-        
-        /// <remarks/>
-        Other,
-        
-        /// <remarks/>
-        Vendor,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class SalesTax : CdmBase {
-        
-        private string nameField;
-        
-        private string descField;
-        
-        private decimal taxRateField;
-        
-        private bool taxRateFieldSpecified;
-        
-        private IdType vendorIdField;
-        
-        private string vendorNameField;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Desc {
-            get {
-                return this.descField;
-            }
-            set {
-                this.descField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal TaxRate {
-            get {
-                return this.taxRateField;
-            }
-            set {
-                this.taxRateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TaxRateSpecified {
-            get {
-                return this.taxRateFieldSpecified;
-            }
-            set {
-                this.taxRateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType VendorId {
-            get {
-                return this.vendorIdField;
-            }
-            set {
-                this.vendorIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string VendorName {
-            get {
-                return this.vendorNameField;
-            }
-            set {
-                this.vendorNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class SalesTaxCode : CdmBase {
-        
-        private string nameField;
-        
-        private bool activeField;
-        
-        private bool activeFieldSpecified;
-        
-        private bool taxableField;
-        
-        private bool taxableFieldSpecified;
-        
-        private string descField;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Active {
-            get {
-                return this.activeField;
-            }
-            set {
-                this.activeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ActiveSpecified {
-            get {
-                return this.activeFieldSpecified;
-            }
-            set {
-                this.activeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Taxable {
-            get {
-                return this.taxableField;
-            }
-            set {
-                this.taxableField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TaxableSpecified {
-            get {
-                return this.taxableFieldSpecified;
-            }
-            set {
-                this.taxableFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Desc {
-            get {
-                return this.descField;
-            }
-            set {
-                this.descField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class SalesTaxGroup : CdmBase {
-        
-        private string nameField;
-        
-        private string descField;
-        
-        private SalesTaxRef[] salesTaxField;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Desc {
-            get {
-                return this.descField;
-            }
-            set {
-                this.descField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SalesTax")]
-        public SalesTaxRef[] SalesTax {
-            get {
-                return this.salesTaxField;
-            }
-            set {
-                this.salesTaxField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class SalesTaxPaymentCheck : CdmBase {
-        
-        private SalesTaxPaymentCheckHeader headerField;
-        
-        private SalesTaxPaymentCheckLine[] lineField;
-        
-        /// <remarks/>
-        public SalesTaxPaymentCheckHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public SalesTaxPaymentCheckLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class SalesTerm : CdmBase {
-        
-        private string nameField;
-        
-        private bool activeField;
-        
-        private bool activeFieldSpecified;
-        
-        private string typeField;
-        
-        private object[] itemsField;
-        
-        private ItemsChoiceType3[] itemsElementNameField;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Active {
-            get {
-                return this.activeField;
-            }
-            set {
-                this.activeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ActiveSpecified {
-            get {
-                return this.activeFieldSpecified;
-            }
-            set {
-                this.activeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Type {
-            get {
-                return this.typeField;
-            }
-            set {
-                this.typeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DateDiscountPercent", typeof(decimal))]
-        [System.Xml.Serialization.XmlElementAttribute("DayOfMonthDue", typeof(string), DataType="positiveInteger")]
-        [System.Xml.Serialization.XmlElementAttribute("DiscountDayOfMonth", typeof(string), DataType="positiveInteger")]
-        [System.Xml.Serialization.XmlElementAttribute("DiscountDays", typeof(string), DataType="positiveInteger")]
-        [System.Xml.Serialization.XmlElementAttribute("DiscountPercent", typeof(decimal))]
-        [System.Xml.Serialization.XmlElementAttribute("DueDays", typeof(string), DataType="positiveInteger")]
-        [System.Xml.Serialization.XmlElementAttribute("DueNextMonthDays", typeof(string), DataType="positiveInteger")]
-        [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
-        public object[] Items {
-            get {
-                return this.itemsField;
-            }
-            set {
-                this.itemsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public ItemsChoiceType3[] ItemsElementName {
-            get {
-                return this.itemsElementNameField;
-            }
-            set {
-                this.itemsElementNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IncludeInSchema=false)]
-    public enum ItemsChoiceType3 {
-        
-        /// <remarks/>
-        DateDiscountPercent,
-        
-        /// <remarks/>
-        DayOfMonthDue,
-        
-        /// <remarks/>
-        DiscountDayOfMonth,
-        
-        /// <remarks/>
-        DiscountDays,
-        
-        /// <remarks/>
-        DiscountPercent,
-        
-        /// <remarks/>
-        DueDays,
-        
-        /// <remarks/>
-        DueNextMonthDays,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class ShipMethod : CdmBase {
-        
-        private string nameField;
-        
-        private bool activeField;
-        
-        private bool activeFieldSpecified;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Active {
-            get {
-                return this.activeField;
-            }
-            set {
-                this.activeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ActiveSpecified {
-            get {
-                return this.activeFieldSpecified;
-            }
-            set {
-                this.activeFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class TimeActivity : CdmBase {
-        
-        private System.DateTime txnDateField;
-        
-        private bool txnDateFieldSpecified;
-        
-        private TimeActivityTypeEnum nameOfField;
-        
-        private bool nameOfFieldSpecified;
-        
-        private object itemField;
-        
-        private IdType customerIdField;
-        
-        private string customerNameField;
-        
-        private IdType itemIdField;
-        
-        private string itemNameField;
-        
-        private ItemTypeEnum itemTypeField;
-        
-        private bool itemTypeFieldSpecified;
-        
-        private IdType classIdField;
-        
-        private string classNameField;
-        
-        private BillableStatusEnum billableStatusField;
-        
-        private bool billableStatusFieldSpecified;
-        
-        private bool taxableField;
-        
-        private bool taxableFieldSpecified;
-        
-        private decimal hourlyRateField;
-        
-        private bool hourlyRateFieldSpecified;
-        
-        private string hoursField;
-        
-        private string minutesField;
-        
-        private string breakHoursField;
-        
-        private string breakMinutesField;
-        
-        private System.DateTime startTimeField;
-        
-        private bool startTimeFieldSpecified;
-        
-        private System.DateTime endTimeField;
-        
-        private bool endTimeFieldSpecified;
-        
-        private string descriptionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
-        public System.DateTime TxnDate {
-            get {
-                return this.txnDateField;
-            }
-            set {
-                this.txnDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TxnDateSpecified {
-            get {
-                return this.txnDateFieldSpecified;
-            }
-            set {
-                this.txnDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public TimeActivityTypeEnum NameOf {
-            get {
-                return this.nameOfField;
-            }
-            set {
-                this.nameOfField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool NameOfSpecified {
-            get {
-                return this.nameOfFieldSpecified;
-            }
-            set {
-                this.nameOfFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Employee", typeof(EmployeeRef))]
-        [System.Xml.Serialization.XmlElementAttribute("Vendor", typeof(VendorRef))]
-        public object Item {
-            get {
-                return this.itemField;
-            }
-            set {
-                this.itemField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType CustomerId {
-            get {
-                return this.customerIdField;
-            }
-            set {
-                this.customerIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CustomerName {
-            get {
-                return this.customerNameField;
-            }
-            set {
-                this.customerNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType ItemId {
-            get {
-                return this.itemIdField;
-            }
-            set {
-                this.itemIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ItemName {
-            get {
-                return this.itemNameField;
-            }
-            set {
-                this.itemNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ItemTypeEnum ItemType {
-            get {
-                return this.itemTypeField;
-            }
-            set {
-                this.itemTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ItemTypeSpecified {
-            get {
-                return this.itemTypeFieldSpecified;
-            }
-            set {
-                this.itemTypeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType ClassId {
-            get {
-                return this.classIdField;
-            }
-            set {
-                this.classIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ClassName {
-            get {
-                return this.classNameField;
-            }
-            set {
-                this.classNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public BillableStatusEnum BillableStatus {
-            get {
-                return this.billableStatusField;
-            }
-            set {
-                this.billableStatusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool BillableStatusSpecified {
-            get {
-                return this.billableStatusFieldSpecified;
-            }
-            set {
-                this.billableStatusFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Taxable {
-            get {
-                return this.taxableField;
-            }
-            set {
-                this.taxableField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TaxableSpecified {
-            get {
-                return this.taxableFieldSpecified;
-            }
-            set {
-                this.taxableFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal HourlyRate {
-            get {
-                return this.hourlyRateField;
-            }
-            set {
-                this.hourlyRateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool HourlyRateSpecified {
-            get {
-                return this.hourlyRateFieldSpecified;
-            }
-            set {
-                this.hourlyRateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
-        public string Hours {
-            get {
-                return this.hoursField;
-            }
-            set {
-                this.hoursField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
-        public string Minutes {
-            get {
-                return this.minutesField;
-            }
-            set {
-                this.minutesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
-        public string BreakHours {
-            get {
-                return this.breakHoursField;
-            }
-            set {
-                this.breakHoursField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="integer")]
-        public string BreakMinutes {
-            get {
-                return this.breakMinutesField;
-            }
-            set {
-                this.breakMinutesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime StartTime {
-            get {
-                return this.startTimeField;
-            }
-            set {
-                this.startTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool StartTimeSpecified {
-            get {
-                return this.startTimeFieldSpecified;
-            }
-            set {
-                this.startTimeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndTime {
-            get {
-                return this.endTimeField;
-            }
-            set {
-                this.endTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool EndTimeSpecified {
-            get {
-                return this.endTimeFieldSpecified;
-            }
-            set {
-                this.endTimeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public enum TimeActivityTypeEnum {
-        
-        /// <remarks/>
-        Employee,
-        
-        /// <remarks/>
-        Vendor,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class TxnGeneric : CdmBase {
-        
-        private TxnGenericHeader headerField;
-        
-        /// <remarks/>
-        public TxnGenericHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public partial class TxnGenericHeader : HeaderBase {
-        
-        private TxnTypeEnum txnTypeField;
-        
-        private bool txnTypeFieldSpecified;
-        
-        private IdType accountIdField;
-        
-        private string accountNameField;
-        
-        private AccountTypeEnum accountTypeField;
-        
-        private bool accountTypeFieldSpecified;
-        
-        private IdType entityIdField;
-        
-        private string entityNameField;
-        
-        private EntityTypeEnum entityTypeField;
-        
-        private bool entityTypeFieldSpecified;
-        
-        private decimal totalAmtField;
-        
-        private bool totalAmtFieldSpecified;
-        
-        /// <remarks/>
-        public TxnTypeEnum TxnType {
-            get {
-                return this.txnTypeField;
-            }
-            set {
-                this.txnTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TxnTypeSpecified {
-            get {
-                return this.txnTypeFieldSpecified;
-            }
-            set {
-                this.txnTypeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType AccountId {
-            get {
-                return this.accountIdField;
-            }
-            set {
-                this.accountIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string AccountName {
-            get {
-                return this.accountNameField;
-            }
-            set {
-                this.accountNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public AccountTypeEnum AccountType {
-            get {
-                return this.accountTypeField;
-            }
-            set {
-                this.accountTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AccountTypeSpecified {
-            get {
-                return this.accountTypeFieldSpecified;
-            }
-            set {
-                this.accountTypeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType EntityId {
-            get {
-                return this.entityIdField;
-            }
-            set {
-                this.entityIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string EntityName {
-            get {
-                return this.entityNameField;
-            }
-            set {
-                this.entityNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EntityTypeEnum EntityType {
-            get {
-                return this.entityTypeField;
-            }
-            set {
-                this.entityTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool EntityTypeSpecified {
-            get {
-                return this.entityTypeFieldSpecified;
-            }
-            set {
-                this.entityTypeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal TotalAmt {
-            get {
-                return this.totalAmtField;
-            }
-            set {
-                this.totalAmtField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TotalAmtSpecified {
-            get {
-                return this.totalAmtFieldSpecified;
-            }
-            set {
-                this.totalAmtFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public enum TxnTypeEnum {
-        
-        /// <remarks/>
-        ARRefundCreditCard,
-        
-        /// <remarks/>
-        Bill,
-        
-        /// <remarks/>
-        BillPayment,
-        
-        /// <remarks/>
-        BuildAssembly,
-        
-        /// <remarks/>
-        CarryOver,
-        
-        /// <remarks/>
-        CashPurchase,
-        
-        /// <remarks/>
-        Charge,
-        
-        /// <remarks/>
-        Check,
-        
-        /// <remarks/>
-        CreditCardCharge,
-        
-        /// <remarks/>
-        CreditCardCredit,
-        
-        /// <remarks/>
-        CreditMemo,
-        
-        /// <remarks/>
-        Deposit,
-        
-        /// <remarks/>
-        EFPLiabilityCheck,
-        
-        /// <remarks/>
-        EFTBillPayment,
-        
-        /// <remarks/>
-        EFTRefund,
-        
-        /// <remarks/>
-        Estimate,
-        
-        /// <remarks/>
-        InventoryAdjustment,
-        
-        /// <remarks/>
-        Invoice,
-        
-        /// <remarks/>
-        ItemReceipt,
-        
-        /// <remarks/>
-        JournalEntry,
-        
-        /// <remarks/>
-        LiabilityAdjustment,
-        
-        /// <remarks/>
-        Paycheck,
-        
-        /// <remarks/>
-        PayrollLiabilityCheck,
-        
-        /// <remarks/>
-        PurchaseOrder,
-        
-        /// <remarks/>
-        PriorPayment,
-        
-        /// <remarks/>
-        ReceivePayment,
-        
-        /// <remarks/>
-        RefundCheck,
-        
-        /// <remarks/>
-        SalesOrder,
-        
-        /// <remarks/>
-        SalesReceipt,
-        
-        /// <remarks/>
-        SalesTaxPaymentCheck,
-        
-        /// <remarks/>
-        Transfer,
-        
-        /// <remarks/>
-        TimeActivity,
-        
-        /// <remarks/>
-        VendorCredit,
-        
-        /// <remarks/>
-        YTDAdjustment,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class UOM : CdmBase {
-        
-        private string nameField;
-        
-        private string abbrvField;
-        
-        private UOMBaseTypeEnum baseTypeField;
-        
-        private bool baseTypeFieldSpecified;
-        
-        private UOMConvUnit[] convUnitField;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Abbrv {
-            get {
-                return this.abbrvField;
-            }
-            set {
-                this.abbrvField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public UOMBaseTypeEnum BaseType {
-            get {
-                return this.baseTypeField;
-            }
-            set {
-                this.baseTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool BaseTypeSpecified {
-            get {
-                return this.baseTypeFieldSpecified;
-            }
-            set {
-                this.baseTypeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ConvUnit")]
-        public UOMConvUnit[] ConvUnit {
-            get {
-                return this.convUnitField;
-            }
-            set {
-                this.convUnitField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    public enum UOMBaseTypeEnum {
-        
-        /// <remarks/>
-        Area,
-        
-        /// <remarks/>
-        Count,
-        
-        /// <remarks/>
-        Length,
-        
-        /// <remarks/>
-        Other,
-        
-        /// <remarks/>
-        Time,
-        
-        /// <remarks/>
-        Volume,
-        
-        /// <remarks/>
-        Weight,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class VendorCredit : CdmBase {
-        
-        private VendorCreditHeader headerField;
-        
-        private VendorCreditLine[] lineField;
-        
-        /// <remarks/>
-        public VendorCreditHeader Header {
-            get {
-                return this.headerField;
-            }
-            set {
-                this.headerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Line")]
-        public VendorCreditLine[] Line {
-            get {
-                return this.lineField;
-            }
-            set {
-                this.lineField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "2.0.50727.3038")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.intuit.com/sb/cdm/v2")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.intuit.com/sb/cdm/v2", IsNullable=false)]
-    public partial class VendorCreditToApply : CdmBase {
-        
-        private TxnTypeEnum txnTypeField;
-        
-        private bool txnTypeFieldSpecified;
-        
-        private IdType vendorIdField;
-        
-        private string vendorNameField;
-        
-        private IdType aPAccountIdField;
-        
-        private string aPAccountNameField;
-        
-        private string docNumberField;
-        
-        private System.DateTime txnDateField;
-        
-        private bool txnDateFieldSpecified;
-        
-        private decimal creditRemainingField;
-        
-        private bool creditRemainingFieldSpecified;
-        
-        private currencyCode currencyField;
-        
-        private bool currencyFieldSpecified;
-        
-        /// <remarks/>
-        public TxnTypeEnum TxnType {
-            get {
-                return this.txnTypeField;
-            }
-            set {
-                this.txnTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TxnTypeSpecified {
-            get {
-                return this.txnTypeFieldSpecified;
-            }
-            set {
-                this.txnTypeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType VendorId {
-            get {
-                return this.vendorIdField;
-            }
-            set {
-                this.vendorIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string VendorName {
-            get {
-                return this.vendorNameField;
-            }
-            set {
-                this.vendorNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public IdType APAccountId {
-            get {
-                return this.aPAccountIdField;
-            }
-            set {
-                this.aPAccountIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string APAccountName {
-            get {
-                return this.aPAccountNameField;
-            }
-            set {
-                this.aPAccountNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string DocNumber {
-            get {
-                return this.docNumberField;
-            }
-            set {
-                this.docNumberField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(DataType="date")]
-        public System.DateTime TxnDate {
-            get {
-                return this.txnDateField;
-            }
-            set {
-                this.txnDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TxnDateSpecified {
-            get {
-                return this.txnDateFieldSpecified;
-            }
-            set {
-                this.txnDateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal CreditRemaining {
-            get {
-                return this.creditRemainingField;
-            }
-            set {
-                this.creditRemainingField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool CreditRemainingSpecified {
-            get {
-                return this.creditRemainingFieldSpecified;
-            }
-            set {
-                this.creditRemainingFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public currencyCode Currency {
-            get {
-                return this.currencyField;
-            }
-            set {
-                this.currencyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool CurrencySpecified {
-            get {
-                return this.currencyFieldSpecified;
-            }
-            set {
-                this.currencyFieldSpecified = value;
             }
         }
     }

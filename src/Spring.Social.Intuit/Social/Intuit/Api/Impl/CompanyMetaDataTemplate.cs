@@ -10,7 +10,7 @@ using System.Xml.Serialization;
 
 namespace Spring.Social.Intuit.Api.Impl
 {
-    class CompanyMetaDataTemplate : CompanyMetaDataOperations
+    class CompanyMetaDataTemplate : ICompanyMetaDataOperations
     {
         private const String companyDataUrl = "https://services.intuit.com/sb/company/v2/availableList";
 
@@ -21,17 +21,12 @@ namespace Spring.Social.Intuit.Api.Impl
             this.restTemplate = restTemplate;
         }
 
-        public RestResponseCompaniesMetaDataCompanyMetaData CompanyMetaData()
+        public CompanyMetaData CompanyMetaData()
         {
             RestResponse companyDataRestResponse = this.restTemplate.GetForObjectAsync<RestResponse>(CompanyMetaDataTemplate.companyDataUrl).Result;
-
-            //String sb = this.restTemplate.GetForObjectAsync<String>(CompanyMetaDataTemplate.companyDataUrl).Result;
-            //XmlSerializer serializer = new XmlSerializer(typeof(RestResponse));
-            //RestResponse companyDataRestResponse = (RestResponse)serializer.Deserialize(new MemoryStream(Encoding.ASCII.GetBytes(sb.ToString())));
-
             if (companyDataRestResponse != null)
             {
-                return companyDataRestResponse.Items[0].CompanyMetaData[1];
+                return companyDataRestResponse.CompaniesMetaData.CompanyMetaData[1];
             }
             return null;
         }

@@ -12,3 +12,8 @@ build
 package
 *.testsettings
 *.vsmdi
+Backup
+TestResults
+UpgradeLog.XML
+UpgradeLog.htm
+_UpgradeReport_Files

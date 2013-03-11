@@ -6,8 +6,8 @@ using Intuit.Sb.Cdm.V2;
 
 namespace Spring.Social.Intuit.Api
 {
-    public interface CompanyMetaDataOperations
+    public interface ICompanyMetaDataOperations
     {
-        RestResponseCompaniesMetaDataCompanyMetaData CompanyMetaData();
+        CompanyMetaData CompanyMetaData();
     }
 }

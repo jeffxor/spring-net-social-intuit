@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UserResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://platform.intuit.com/api/v1">
+	<ErrorCode>0</ErrorCode>
+	<ServerTime>2013-03-05T03:47:05.3323031Z</ServerTime>
+	<User Id="57277067.dvj8">
+		<FirstName>Jeffrey</FirstName>
+		<LastName>Williams</LastName>
+		<EmailAddress>jeffxor.williams@gmail.com</EmailAddress>
+		<ScreenName>jeffxor.williams@gmail.com</ScreenName>
+		<IsVerified>true</IsVerified>
+	</User>
+</UserResponse>

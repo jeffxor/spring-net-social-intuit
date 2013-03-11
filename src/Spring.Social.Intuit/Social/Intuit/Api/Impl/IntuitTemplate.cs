@@ -12,15 +12,19 @@ using Spring.Social.Intuit.Api.Impl;
 
 namespace Spring.Social.Intuit.Api.Impl
 {
-    class IntuitTemplate : AbstractOAuth1ApiBinding, IIntuit
+    public class IntuitTemplate : AbstractOAuth1ApiBinding, IIntuit
     {
         private static readonly Uri API_URI_BASE = new Uri("https://qbo.sbfinance.intuit.com");
 
         private String companyId;
-        private CompanyMetaDataOperations companyMetaDataOperations;
-        private IUserOperations userOperations;
+        private IAccountOperations accountOperations;
+        private IInvoiceOperations invoiceOperations;
+        private IItemOperations itemOperations;
         private ICustomerOperations customerOperations;
-
+        private ICompanyMetaDataOperations companyMetaDataOperations;
+        private IPaymentMethodOperations paymentMethodOperations;
+        private IPaymentOperations paymentOperations;
+        private IUserOperations userOperations;
         /// <summary>
         /// Create a new instance of <see cref="TwitterTemplate"/>.
         /// </summary>
@@ -31,17 +35,80 @@ namespace Spring.Social.Intuit.Api.Impl
         public IntuitTemplate(string consumerKey, string consumerSecret, string accessToken, string accessTokenSecret) 
             : base(consumerKey, consumerSecret, accessToken, accessTokenSecret)
         {
-            this.InitSubApis();
+            
 	    }
+
+
+        public IAccountOperations AccountOperations
+        {
+            get
+            {
+                this.InitSubApis();
+                return this.accountOperations;
+            }
+        }
+
+        public ICompanyMetaDataOperations CompanyMetaDataOperations
+        {
+            get
+            {
+                this.InitSubApis();
+                return this.companyMetaDataOperations;
+            }
+        }
+        
+        public ICustomerOperations CustomerOperations
+        {
+            get
+            {
+                this.InitSubApis();
+                return this.customerOperations;
+            }
+        }
+
+        public IInvoiceOperations InvoiceOperations
+        {
+            get
+            {
+                this.InitSubApis();
+                return this.invoiceOperations;
+            }
+        }
+
+        public IItemOperations ItemOperations
+        {
+            get
+            {
+                this.InitSubApis();
+                return this.itemOperations;
+            }
+        }
+
+        public IPaymentMethodOperations PaymentMethodOperations
+        {
+            get
+            {
+                this.InitSubApis();
+                return this.paymentMethodOperations;
+            }
+        }
+
+        public IPaymentOperations PaymentOperations
+        {
+            get
+            {
+                this.InitSubApis();
+                return this.paymentOperations;
+            }
+        }
 
         public IUserOperations UserOperations
         {
-            get { return this.userOperations; }
-        }
-
-        public ICustomerOperations CustomerOperations
-        {
-            get { return this.customerOperations; }
+            get
+            {
+                this.InitSubApis();
+                return this.userOperations;
+            }
         }
 
         /// <summary>
@@ -78,18 +145,21 @@ namespace Spring.Social.Intuit.Api.Impl
         }
 
         private void InitSubApis()
-        {
-            
+        {  
             if (!isIntialized())
             {
                 companyMetaDataOperations = new CompanyMetaDataTemplate(this.RestTemplate);
                 this.companyId = this.companyMetaDataOperations.CompanyMetaData().ExternalRealmId;
-                userOperations = new UserTemplate(this.RestTemplate, IsAuthorized, this.companyId);
-                customerOperations = new CustomerTemplate(this.RestTemplate, IsAuthorized, this.companyId);                
+                accountOperations = new AccountTemplate(this.RestTemplate, IsAuthorized, this.companyId);
+                customerOperations = new CustomerTemplate(this.RestTemplate, IsAuthorized, this.companyId);
+                invoiceOperations = new InvoiceTemplate(this.RestTemplate, IsAuthorized, this.companyId);
+                itemOperations = new ItemTemplate(this.RestTemplate, IsAuthorized, this.companyId);
+                paymentMethodOperations = new PaymentMethodTemplate(this.RestTemplate, IsAuthorized, this.companyId);
+                paymentOperations = new PaymentTemplate(this.RestTemplate, IsAuthorized, this.companyId);
+                userOperations = new UserTemplate(this.RestTemplate, IsAuthorized);
             }
-
         }
-
+        
         private bool isIntialized()
         {
             return companyId != null;

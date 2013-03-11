@@ -9,8 +9,8 @@
     <ProjectGuid>{D1A598B1-1F6C-4CAF-B437-DB2FF53735C1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Spring.Social.Intuit.Tests._2010_NET40</RootNamespace>
-    <AssemblyName>Spring.Social.Intuit.Tests.2010-NET40</AssemblyName>
+    <RootNamespace>Spring</RootNamespace>
+    <AssemblyName>Spring.Social.Intuit.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\packages\Common.Logging.2.0.0\lib\2.0\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="nunit.framework">
       <HintPath>..\..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -54,14 +58,58 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTest1.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Readme\Spring.Rest.txt" />
-    <Content Include="App_Readme\Spring.Social.Core.txt" />
+    <Compile Include="Social\Intuit\Api\Impl\AbstractIntuitTest.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\CompanyMetaDataTemplateTest.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\AccountTemplateTest.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\InvoiceTemplateTest.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\PaymentMethodTemplateTest.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\CustomerTemplateTest.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\UserTemplateTest.cs" />
+    <Compile Include="Social\Intuit\Builder\AccountBuilder.cs" />
+    <Compile Include="Social\Intuit\Builder\InvoiceBuilder.cs" />
+    <Compile Include="Social\Intuit\Builder\CustomerBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-account-createrequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-account-deleterequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-account-deleteresponse.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-account-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-account-updaterequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-accountlist-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-companylist.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-customer-createrequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-customer-deleterequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-customer-deleteresponse.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-customer-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-customer-updaterequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-customerlist-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-invoice-createrequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-invoice-deleterequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-invoice-deleteresponse.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-invoice-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-invoice-updaterequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-invoicelist-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-item-createrequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-item-deleterequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-item-deleteresponse.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-item-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-item-updaterequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-itemlist-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-payment-createrequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-payment-deleterequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-payment-deleteresponse.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-payment-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-payment-updaterequest.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-paymentlist-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-paymentmethod-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-paymentmethodlist-response.xml" />
+    <EmbeddedResource Include="Social\Intuit\Api\Impl\intuit-user-response.xml" />
+    <None Include="Spring.Social.Intuit.Tests.dll.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Spring.Social.Intuit\Spring.Social.Intuit.2010-NET40.csproj">
@@ -70,11 +118,4 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

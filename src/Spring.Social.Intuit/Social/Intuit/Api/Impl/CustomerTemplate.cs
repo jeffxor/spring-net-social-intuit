@@ -77,7 +77,7 @@ namespace Spring.Social.Intuit.Api.Impl
             IDictionary<string, object> vars = new Dictionary<string, object>(2);
             vars.Add("companyId", this.companyId);
             vars.Add("customerID", customer.Id.Value);
-            Customer response = this.restTemplate.PostForObjectAsync<Customer>("{baseURL}/resource/customer/v2/{companyId}/{customerID}?methodx=delete", buildDelete(customer), vars).Result;
+            Customer response = this.restTemplate.PostForObjectAsync<Customer>("/resource/customer/v2/{companyId}/{customerID}?methodx=delete", buildDelete(customer), vars).Result;
 		    return (response.Id == null);
         }
 

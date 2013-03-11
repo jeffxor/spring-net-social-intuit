@@ -9,16 +9,16 @@ namespace Spring.Social.Intuit.Api
     public class IntuitProfile
     {
         public string Name { get; set; }
-        public string Ticket { get; set; }
-        public string AgentId { get; set; }
-        public QboUserCompanyMapping CurrentCompany { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string EmailAddress { get; set; }
 
-        public IntuitProfile(QboUser qboUser)
+        public IntuitProfile(User user)
         {
-            Name = qboUser.LoginName;
-            Ticket = qboUser.Ticket;
-            AgentId = qboUser.AgentId;
-            CurrentCompany = qboUser.CurrentCompany;
+            Name = user.ScreenName;
+            FirstName = user.FirstName;
+            LastName = user.LastName;
+            EmailAddress = user.EmailAddress;
         }
     }
 }

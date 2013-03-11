@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.intuit.com/sb/cdm/v2" targetNamespace="http://www.intuit.com/sb/cdm/v2" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="RestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CompaniesMetaData" type="CompaniesMetaData" minOccurs="1" maxOccurs="1"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+<!--  
+  <xs:element name="CompaniesMetaData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="CompanyMetaData"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+-->
+<!--  
+  <xs:element name="CompanyMetaData">
+    <xs:complexType>
+      <xs:sequence>
+		    <xs:element name="ExternalRealmId" type="xs:integer"/>
+		    <xs:element name="QBNRegisteredCompanyName" type="xs:string"/>
+		    <xs:element name="CompanySignUpDateTime" type="xs:dateTime"/>
+		    <xs:element name="SampleFile" type="xs:boolean"/>
+		    <xs:element name="QBNCompanyUserAdminIdNumber" type="xs:integer"/>
+		    <xs:element name="QBNCompanyUserAdminEmail" type="xs:string"/>
+		    <xs:element name="SyncEnabled" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+-->
+</xs:schema>
