@@ -111,8 +111,8 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="GenerateSerializationClasses" Outputs="Social\Intuit\Data\Finance.cs" Inputs="Data\xsd\qbo.xsd, Data\xsd\CompanyMetaData.xsd, Data\xsd\CustomerCdmTypes.xsd, Data\xsd\Finance.xsd, Data\xsd\Groups.xsd, Data\xsd\IntuitCdmBaseTypes.xsd, , Data\xsd\IntuitCustomFieldCdmTypes.xsd, , Data\xsd\PartyCdmTypes.xsd">
-    <Exec Command="&quot;C:\Program Files (x86)\Microsoft SDKs\Windows\v6.0A\bin\xsd.exe&quot; Data\xsd\CompanyMetaData.xsd Data\xsd\Qbo.xsd Data\xsd\UserResponse.xsd Data\xsd\Finance.xsd /classes /namespace:Intuit.Sb.Cdm.V2 /out:Social\Intuit\Data" />
+  <Target Name="GenerateSerializationClasses" Outputs="Social\Intuit\Data\Finance.cs" Inputs="Data\xsd\qbo.xsd, Data\xsd\CompanyMetaData.xsd, Data\xsd\CustomerCdmTypes.xsd, Data\xsd\Finance.xsd, Data\xsd\Groups.xsd, Data\xsd\IntuitCdmBaseTypes.xsd, , Data\xsd\IntuitCustomFieldCdmTypes.xsd, Data\xsd\PartyCdmTypes.xsd">
+    <Exec Command="&quot;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\xsd.exe&quot; Data\xsd\CompanyMetaData.xsd Data\xsd\Qbo.xsd Data\xsd\UserResponse.xsd Data\xsd\Finance.xsd /classes /namespace:Intuit.Sb.Cdm.V2 /out:Social\Intuit\Data" />
   </Target>
   <Target Name="BeforeBuild" DependsOnTargets="GenerateSerializationClasses">
   </Target>

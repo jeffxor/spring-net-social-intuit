@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Item xmlns:ns2="http://www.intuit.com/sb/cdm/qbo" xmlns="http://www.intuit.com/sb/cdm/v2">
+<Item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.intuit.com/sb/cdm/v2">
 	<Id>7</Id>
 	<SyncToken>1</SyncToken>
 </Item>

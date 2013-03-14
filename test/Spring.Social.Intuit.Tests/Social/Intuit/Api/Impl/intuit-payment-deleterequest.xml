@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Payment xmlns="http://www.intuit.com/sb/cdm/v2" xmlns:ns2="http://www.intuit.com/sb/cdm/qbopayroll/v1"
-	xmlns:ns3="http://www.intuit.com/sb/cdm/qbo">
+<Payment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.intuit.com/sb/cdm/v2">
 	<Id>47</Id>
 	<SyncToken>1</SyncToken>
 </Payment>

@@ -61,11 +61,15 @@
     <Compile Include="Social\Intuit\Api\Impl\AbstractIntuitTest.cs" />
     <Compile Include="Social\Intuit\Api\Impl\CompanyMetaDataTemplateTest.cs" />
     <Compile Include="Social\Intuit\Api\Impl\AccountTemplateTest.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\PaymentTemplateTest.cs" />
+    <Compile Include="Social\Intuit\Api\Impl\ItemTemplateTest.cs" />
     <Compile Include="Social\Intuit\Api\Impl\InvoiceTemplateTest.cs" />
     <Compile Include="Social\Intuit\Api\Impl\PaymentMethodTemplateTest.cs" />
     <Compile Include="Social\Intuit\Api\Impl\CustomerTemplateTest.cs" />
     <Compile Include="Social\Intuit\Api\Impl\UserTemplateTest.cs" />
     <Compile Include="Social\Intuit\Builder\AccountBuilder.cs" />
+    <Compile Include="Social\Intuit\Builder\PaymentBuilder.cs" />
+    <Compile Include="Social\Intuit\Builder\ItemBuilder.cs" />
     <Compile Include="Social\Intuit\Builder\InvoiceBuilder.cs" />
     <Compile Include="Social\Intuit\Builder\CustomerBuilder.cs" />
   </ItemGroup>
